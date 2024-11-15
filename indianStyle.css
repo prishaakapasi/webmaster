@@ -1,0 +1,44 @@
+*{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+   }
+h1{
+    text-align: center;
+}
+.div {
+    width: 100%;               /* Full width of the screen */
+    box-sizing: border-box;     /* Includes padding in width calculation */
+    padding: 20px;              /* Adds padding */
+    margin: 0;             /* Adds vertical margin */
+    background-color: #f0f0f0; /* Light gray background color */
+    height: 500px;
+}  
+.textRight, .textLeft{
+    width: 100 px;
+    height: 50%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+p{
+    display: inline;
+}
+#descritption{
+    display: block;
+}
+#div1{
+    background-color: #83C5BE;
+}
+#div2{
+    background-color: #FFE66D;
+}
+#div3{
+    background-color: #FF866B;
+}
+#div4{
+    background-color: #83C5BE;
+}
+#div5{
+    background-color: #FFE66D;
+}
