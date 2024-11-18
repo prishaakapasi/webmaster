@@ -1,0 +1,70 @@
+* {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 20;
+    font-size: 10vh;
+}
+.container {
+    width: 25%; /* Adjust width as needed for spacing */
+    height: 46vh;
+    background-color: #83C5BE;
+    margin: 20px; /* Add margin for spacing */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 30px;
+}
+
+.container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px;
+}
+.foodImg{
+    display: block;
+    width: 70%;
+    height: 20vh;
+    margin: 20px auto;
+}
+p{
+    text-align: center;
+}
+.button{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #57ADA6;
+}
+.button:hover{
+    background-color: #438578;
+}
+.bigCircle{
+    border-radius: 50%;
+    background-color: #FEB92F;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 7px solid #ffffff;
+}
+.smallCircle{
+    display: block;
+    border-radius: 50%;
+    background-color: #FF866B;
+    width: 150px;
+    height: 150px;
+    border: 7px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bigCircle1{
+    position: relative;
+    transform: translate(125%, -575%);
+}
