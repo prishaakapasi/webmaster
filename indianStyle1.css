@@ -68,3 +68,8 @@ p{
     position: relative;
     transform: translate(125%, -575%);
 }
+#bigCircle2{
+    position: relative;
+    transform: translate(605%, -600%);
+    z-index: -1;
+}
