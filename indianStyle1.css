@@ -67,10 +67,15 @@ p{
 }
 #bigCircle1{
     position: relative;
-    transform: translate(125%, -575%);
+    transform: translate(105%, -575%);
 }
 #bigCircle2{
     position: relative;
     transform: translate(605%, -600%);
+    z-index: -1;
+}
+#bigCircle3{
+    position: relative;
+    transform: translate(400%, -600%);
     z-index: -1;
 }
