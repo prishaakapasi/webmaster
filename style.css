@@ -76,6 +76,6 @@ p{
 }
 #bigCircle3{
     position: relative;
-    transform: translate(400%, -600%);
+    transform: translate(500%, -600%);
     z-index: -1;
 }
