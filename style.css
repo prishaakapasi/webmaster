@@ -79,3 +79,6 @@ p{
     transform: translate(500%, -600%);
     z-index: -1;
 }
+body{
+    background-image: url('Downloads/ menu background (1).png');
+}
