@@ -45,7 +45,7 @@ p{
 .button:hover{
     background-color: #438578;
 }
-.bigCircle{
+/*.bigCircle{
     border-radius: 50%;
     background-color: #FEB92F;
     width: 200px;
@@ -78,7 +78,7 @@ p{
     position: relative;
     transform: translate(500%, -600%);
     z-index: -1;
-}
+}*/
 body{
-    background-image: url('menu background.png');
+    background-image: url('menu background(1).png');
 }
