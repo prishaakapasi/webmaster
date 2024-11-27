@@ -11,12 +11,13 @@ body{
     text-align: center; 
    }
    fieldset{
-    width: 80%;
+    width: 60%;
     margin: auto;
     border: none;
     background-color: #83C5BE;
     color: white;
-    padding: 20px;
+    padding: 40px;
+    border-radius: 40px;
    }
    p{
     font-size: 16;
@@ -32,8 +33,8 @@ body{
     display: block;
     text-align: left;
     border: none;
-    background-color: #FFE66D;
-    border-radius: 9px;
+    background-color: white;
+    border-radius: 3px;
     color: rgb(0, 0, 0);
     font-size: 12;
    }
