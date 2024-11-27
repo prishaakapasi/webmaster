@@ -49,7 +49,7 @@ h1{
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #83C5BE;
-    color: white;
+    color: black;
   }
   
   /* Style the back side */
