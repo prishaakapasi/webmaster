@@ -26,9 +26,11 @@ fieldset {
     border-radius: 5px;
     padding: 5px;
     box-sizing: border-box; /* Includes padding in width calculation */
+    border: 1px solid #333333;
   }
   body{
-    background-image: url('Reservation.png');
+    background-image: url('Reservation1.png');
+    height: 824px;
 }
 #title, #description{
     text-align: center;
@@ -51,7 +53,7 @@ button {
     display: inline-block; 
     color: #333333; /* Default text color */
     background-color: white;
-    border: 2px solid transparent; /* Invisible by default */
+    border: 1px solid #333333; /* Invisible by default */
     border-radius: 5px;
     overflow: hidden; /* Hides the animated pseudo-element overflow */
     z-index: 1; /* Ensures the button itself stays above pseudo-elements */
@@ -82,7 +84,7 @@ button:hover::before {
 button:hover {
     color: white; /* Changes text color on hover */
     transform: scale(1.05); /* Slightly scales the button */
-    border-color: white; /* Adds a black border */
+    border-color: white;
 }
 
 button:hover span {
