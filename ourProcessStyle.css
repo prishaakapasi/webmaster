@@ -1,8 +1,13 @@
 h1{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     font-weight: 20;
     font-size: 10vh;
+    margin-bottom: 100px;
+}
+body{
+  background-image: url('Reservation1.png');
+  height: 824px;
 }
 .cards{
     display: flex;                /* Arrange cards in a horizontal line */
