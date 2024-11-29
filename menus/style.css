@@ -30,6 +30,7 @@ h1{
     width: 62%;
     height: 25vh;
     margin: 20px auto;
+    border-radius: 50px;
 }
 p{
     text-align: center;
