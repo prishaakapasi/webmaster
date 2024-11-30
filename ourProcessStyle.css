@@ -61,11 +61,17 @@ body{
   .flip-card-front {
     background-color: #83C5BE;
     color: black;
+    height: 55vh;
   }
   
   /* Style the back side */
   .flip-card-back {
     background-color: #83C5BE;
-    color: white;
+    color: black;
     transform: rotateY(180deg);
+    height: 55vh;
+  }
+  p{
+    margin-left: 15px;
+    margin-right: 15px;
   }
