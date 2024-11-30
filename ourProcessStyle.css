@@ -17,7 +17,13 @@ body{
     flex-wrap: wrap; 
     border-radius: 200px;
 }
-
+.frontImg{
+  display: block;
+  width: 85%;
+  height: 30vh;
+  margin: 20px auto;
+  border-radius: 50px;
+}
 .flip-card {
     background-color: transparent;
     width: 300px;
