@@ -51,9 +51,9 @@ button {
     padding: 10px 20px;
     margin: 10px; /* Adds spacing between buttons */
     display: inline-block; 
-    color: #333333; /* Default text color */
-    background-color: white;
-    border: 1px solid #333333; /* Invisible by default */
+    color: #ffffff; /* Default text color */
+    background-color: #333333;
+    border: 2px solid #333333; /* Invisible by default */
     border-radius: 5px;
     overflow: hidden; /* Hides the animated pseudo-element overflow */
     z-index: 1; /* Ensures the button itself stays above pseudo-elements */
@@ -72,7 +72,7 @@ button::before {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #333333; /* Animation fill color */
+    background-color: #ffffff; /* Animation fill color */
     z-index: 0; /* Places it behind the text */
     transition: all 0.5s ease;
 }
@@ -82,13 +82,13 @@ button:hover::before {
 }
 
 button:hover {
-    color: white; /* Changes text color on hover */
+    color: #333333; /* Changes text color on hover */
     transform: scale(1.05); /* Slightly scales the button */
-    border-color: white;
+    border-color: #333333;
 }
 
 button:hover span {
-    color: white; /* Ensures the text changes to white */
+    color: #333333; /* Ensures the text changes to white */
 }
 button:hover span::after {
     content: " >"; /* Adds the '>' symbol on hover */
