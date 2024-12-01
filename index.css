@@ -19,8 +19,8 @@ h3 {
 }
 .dailyImg{
     display: block;
-    width: 67%;
-    height: 28vh;
+    width: 47%;
+    height: 38vh;
     margin: 20px auto;
     border-radius: 300px;
 }
@@ -187,7 +187,7 @@ button span {
     justify-content: flex-start;  /* Aligns content at the top of the box */
     text-align: center;  /* Ensures the text inside the box is centered */
     width: 60%;  /* Adjust width as needed */
-    height: 40vh;  /* Set a taller height for the box */
+    height: 50vh;  /* Set a taller height for the box */
     font-size: 30px;
 }
 
