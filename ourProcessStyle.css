@@ -1,13 +1,18 @@
 h1{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     font-weight: 20;
     font-size: 10vh;
     margin-bottom: 100px;
 }
+h2{
+  margin-left: 15px;
+  margin-right: 15px;
+}
 body{
   background-image: url('our\ process.png');
-  height: 824px;
+  height: 1000px;
+  font-family: "Julius Sans One", sans-serif;
 }
 .cards{
     display: flex;                /* Arrange cards in a horizontal line */
@@ -75,3 +80,51 @@ body{
     margin-left: 15px;
     margin-right: 15px;
   }
+  nav {
+    background-color: white; 
+    padding: 20px 20px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; /* Evenly spaces items across the bar */
+    align-items: center; /* Vertically centers items */
+}
+
+/* List items within the nav */
+nav ul li {
+    margin: 0 15px; /* Adds space between items */
+}
+
+/* Links within the nav */
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Default link color */
+    font-weight: bold; 
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    color: teal; /* Changes color on hover */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}

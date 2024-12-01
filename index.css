@@ -271,6 +271,11 @@ footer a:hover {
     color: #FFE66D;      /* Make the stars golden */
     margin-top: 10px; /* Add space between the review and the stars */
   }
-  
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+   }
+   
 
   
