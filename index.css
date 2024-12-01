@@ -17,7 +17,13 @@ h3 {
     text-align: center;
 
 }
-
+.dailyImg{
+    display: block;
+    width: 67%;
+    height: 28vh;
+    margin: 20px auto;
+    border-radius: 300px;
+}
 .waviy {
     margin: 0 auto; 
     text-align: center; 
