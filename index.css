@@ -17,13 +17,22 @@ h3 {
     text-align: center;
 
 }
-.dailyImg{
-    display: block;
-    width: 67%;
-    height: 28vh;
-    margin: 20px auto;
-    border-radius: 300px;
+#dailySpecialTitle {
+    position: relative;
+    margin-top: 300px;
+    margin-left: 25px;
+    font-size: 20;
 }
+
+.dailyImg {
+    position: relative;
+    height:500px;
+    width: 500px;
+    border-radius: 50%;
+    top: 100px; /* Instead of margin-top */
+    left: -90px; /* For horizontal movement */
+}
+
 .waviy {
     margin: 0 auto; 
     text-align: center; 
