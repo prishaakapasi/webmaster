@@ -196,7 +196,7 @@ button span {
     justify-content: flex-start;  /* Aligns content at the top of the box */
     text-align: center;  /* Ensures the text inside the box is centered */
     width: 60%;  /* Adjust width as needed */
-    height: 40vh;  /* Set a taller height for the box */
+    height: 50vh;  /* Set a taller height for the box */
     font-size: 30px;
 }
 
@@ -292,5 +292,7 @@ footer a:hover {
     }
    }
    
-
+.aboutus p{
+    font-size: 23px;
+}
   
