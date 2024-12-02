@@ -56,9 +56,10 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 
+/* Correct the typo: use div instead of iv */
 div {
     width: 80%; /* Increase width to 80% of the page */
     height: 80vh; /* Set height to 80% of the viewport height */
@@ -67,10 +68,14 @@ div {
     margin-top: 40px;
     border-radius: 20px; /* Slightly round corners */
     font-size: 24px; /* Larger font size */
-    text-align: left;
+    text-align: center; /* Center-align text and children elements */
     padding: 40px; /* Increase padding for spacing around content */
     overflow-y: auto; /* Allow scrolling if content overflows */
     box-sizing: border-box; /* Include padding and border in width/height */
+    display: flex; /* Flexbox to center buttons */
+    flex-direction: column; /* Arrange buttons vertically */
+    justify-content: center; /* Vertically center the buttons */
+    align-items: center; /* Horizontally center the buttons */
 }
 
 p {
@@ -89,13 +94,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.button-container {
-    text-align: center; /* Centers the inline-block buttons horizontally */
-    margin-top: 20px; /* Optional: Adds spacing from the top */
-}
 
 button {
-    position: relative; /* Needed for pseudo-element positioning */
+    text-align: center;
     font-family: "Julius Sans One", sans-serif;
     font-size: 18px;
     font-weight: 400;
