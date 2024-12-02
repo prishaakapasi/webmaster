@@ -293,5 +293,11 @@ footer a:hover {
    
 .aboutus p{
     font-size: 23px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+#dailySpecialName{
+    font-size: 20;
 }
   
