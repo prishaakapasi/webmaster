@@ -81,6 +81,7 @@ div {
 p {
     margin: 0;
     padding: 0;
+    margin-top:10%;
     font-size: 24px; /* Increase font size for the paragraph text */
 }
 
@@ -96,14 +97,17 @@ a:hover {
 }
 
 button {
-    text-align: center;
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
     font-family: "Julius Sans One", sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 20px 30px;
     margin: 10px; /* Adds spacing between buttons */
-    display: inline-block; 
+    margin-left: auto; /* Centers the button horizontally */
+    margin-right: auto; /* Centers the button horizontally */
     color: #ffffff;
     background-color: #333333;
     border: 2px solid transparent; /* Invisible by default */
@@ -113,6 +117,8 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+
 
 button::before {
     content: "";
@@ -150,3 +156,28 @@ button span {
     position: relative; /* Ensures the text is above the background fill */
     z-index: 2;
 }
+footer {
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Add vertical padding */
+    margin-left: -1%;
+    margin-right:-1%;
+    bottom: 0;
+    margin-top: 20%;
+    margin-bottom:-2%;
+    font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
+    font-size: 16px;
+    }
+    
+    footer a {
+    color: #a07f65; /* Highlight link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+    }
+    
+    footer a:hover {
+    color: #ffffff; /* Changes link color on hover */
+    }
+    
