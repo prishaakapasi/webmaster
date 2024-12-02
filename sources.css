@@ -1,0 +1,16 @@
+body{
+    font-family: "Julius Sans One", sans-serif;
+    height: 824px;
+}
+h1{
+    text-align: center;
+    margin-top: 60px;
+}
+div{
+    width: 60%;
+    height: 5000px;
+    background-color: #83C5BE;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 100px;
+}

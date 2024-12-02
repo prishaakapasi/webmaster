@@ -17,13 +17,21 @@ h3 {
     text-align: center;
 
 }
-.dailyImg{
-    display: block;
-    width: 47%;
-    height: 38vh;
-    margin: 20px auto;
-    border-radius: 300px;
+#dailySpecialTitle {
+    position: relative;
+    margin-left: 25px;
+    font-size: 20;
 }
+
+.dailyImg {
+    position: relative;
+    height:500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-top: 60px; 
+    margin-left: -90px; 
+}
+
 .waviy {
     margin: 0 auto; 
     text-align: center; 
@@ -175,7 +183,7 @@ button span {
 }
 
 .aboutus {
-    margin-top: 65%;
+    margin-top: 23%;
     margin-left: 38%;
     background-color: white;  /* White background for the box */
     padding: 20px;  /* Add padding for space inside the box */
@@ -193,7 +201,7 @@ button span {
 
 
 .reviews {
-    margin-top: 60%;
+    margin-top: 45%;
     margin-left: 50%;
     transform: translateX(-50%);
     background-color: white;
