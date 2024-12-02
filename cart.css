@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 /* Applying the same font style to all relevant elements */
-p, h1, li, h3, button,:placeholder-shown {
+p, h1, li, h3, option, button, :placeholder-shown, label, select {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
