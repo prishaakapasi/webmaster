@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 /* Applying the same font style to all relevant elements */
-p, h1, li, h3, button {
+p, h1, li, h3, button,:placeholder-shown {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -73,6 +73,9 @@ nav ul li a:hover {
   
 h1, h2 {
     color: #333;
+}
+h2{
+    margin-top: 70px;
 }
 
 /* Cart Section */
