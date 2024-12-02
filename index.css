@@ -19,7 +19,6 @@ h3 {
 }
 #dailySpecialTitle {
     position: relative;
-    margin-top: 300px;
     margin-left: 25px;
     font-size: 20;
 }
@@ -29,8 +28,8 @@ h3 {
     height:500px;
     width: 500px;
     border-radius: 50%;
-    top: 100px; /* Instead of margin-top */
-    left: -90px; /* For horizontal movement */
+    margin-top: 60px; 
+    margin-left: -90px; 
 }
 
 .waviy {
@@ -184,7 +183,7 @@ button span {
 }
 
 .aboutus {
-    margin-top: 65%;
+    margin-top: 23%;
     margin-left: 38%;
     background-color: white;  /* White background for the box */
     padding: 20px;  /* Add padding for space inside the box */
@@ -202,7 +201,7 @@ button span {
 
 
 .reviews {
-    margin-top: 60%;
+    margin-top: 45%;
     margin-left: 50%;
     transform: translateX(-50%);
     background-color: white;
