@@ -1,0 +1,210 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+/* Applying the same font style to all relevant elements */
+p, h1, li, h3, button {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Julius Sans One", sans-serif; /* Ensuring body text uses the same font */
+    background-color: #83C5BE;
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+  
+nav {
+    background-color: white; 
+    padding: 20px 20px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; /* Evenly spaces items across the bar */
+    align-items: center; /* Vertically centers items */
+}
+
+/* List items within the nav */
+nav ul li {
+    margin: 0 15px; /* Adds space between items */
+}
+
+/* Links within the nav */
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Default link color */
+    font-weight: bold; 
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    color: teal; /* Changes color on hover */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+  
+h1, h2 {
+    color: #333;
+}
+
+/* Cart Section */
+.cart-main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px; /* Increased margin-top to move cart section down */
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item-name {
+    font-weight: bold;
+}
+
+.cart-summary {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.cart-submit-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cart-submit-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart-submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Order Form Section */
+.order-main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.order-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.order-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-form textarea {
+    resize: vertical;
+}
+
+.order-submit-container {
+    text-align: center;
+}
+
+.order-submit-btn {
+    background-color: #FF866B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.order-submit-btn:hover {
+    background-color: #FF866B;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cart-container,
+    .order-form-container {
+        padding: 10px;
+    }
+    
+    .cart-item {
+        padding: 10px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+        font-size: 14px;
+    }
+
+    .cart-submit-btn,
+    .order-submit-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
