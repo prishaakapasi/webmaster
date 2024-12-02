@@ -123,3 +123,30 @@ nav ul li a:hover {
 .circular-button:nth-child(3) { top: 240px; left: 1100px; }
 .circular-button:nth-child(4) { top: 180px; left: 690px; }
 .circular-button:nth-child(5) { top: 250px; left: 140px; }
+
+/* Footer styling */
+footer {
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Add vertical padding */
+    position: relative; /* Default positioning */
+    bottom: 0;
+    margin-top: 20%;
+    width: 100%; /* Full width of the page */
+    font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
+    font-size: 16px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow above the footer */
+}
+
+/* Footer link styling */
+footer a {
+    color: #a07f65; /* Highlight link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    color: #ffffff; /* Changes link color on hover */
+}
