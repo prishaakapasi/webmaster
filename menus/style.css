@@ -47,9 +47,6 @@ p{
 .button:hover{
     background-color: #438578;
 }
-.button::after{
-    
-}
 /*.bigCircle{
     border-radius: 50%;
     background-color: #FEB92F;
