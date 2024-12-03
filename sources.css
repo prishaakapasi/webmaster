@@ -64,25 +64,25 @@ div {
     width: 80%; /* Increase width to 80% of the page */
     height: 80vh; /* Set height to 80% of the viewport height */
     background-color: #83C5BE;
-    margin: auto;
-    margin-top: 20px;
+    margin: auto; /* Centers the box */
+    margin-top: 20px; /* Reduce vertical margin */
     border-radius: 20px; /* Slightly round corners */
     font-size: 24px; /* Larger font size */
     text-align: center; /* Center-align text and children elements */
-    padding: 40px; /* Increase padding for spacing around content */
+    padding: 20px; /* Reduce padding for less space */
     overflow-y: auto; /* Allow scrolling if content overflows */
     box-sizing: border-box; /* Include padding and border in width/height */
-    display: flex; /* Flexbox to center buttons */
-    flex-direction: column; /* Arrange buttons vertically */
-    justify-content: center; /* Vertically center the buttons */
-    align-items: center; /* Horizontally center the buttons */
+    display: flex; /* Flexbox to center children */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: flex-start; /* Align children to the top */
+    align-items: center; /* Horizontally center the children */
 }
 
 p {
-    margin: 0;
+    margin: 0; /* Remove default margin */
     padding: 0;
-    margin-top:10%;
-    font-size: 24px; /* Increase font size for the paragraph text */
+    margin-top: 10px; /* Add a smaller gap */
+    font-size: 24px; /* Increase font size for paragraph text */
 }
 
 a {
