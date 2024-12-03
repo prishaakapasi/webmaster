@@ -65,7 +65,7 @@ div {
     height: 80vh; /* Set height to 80% of the viewport height */
     background-color: #83C5BE;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 20px; /* Slightly round corners */
     font-size: 24px; /* Larger font size */
     text-align: center; /* Center-align text and children elements */
