@@ -81,18 +81,26 @@
     </div>-->
     <script>
         function addToCart(itemName, itemPrice) {
-          // Get existing cart from localStorage, or initialize an empty array if none exists
-          let cart = JSON.parse(localStorage.getItem('cart')) || [];
-          
-          // Add the new item to the cart array
-          cart.push({ name: itemName, price: itemPrice });
-          
-          // Save the updated cart back to localStorage
-          localStorage.setItem('cart', JSON.stringify(cart));
-          
-          // Redirect to the cart page
-          //window.location.href = '../cart.html';
-        }
+  // Get existing cart from localStorage, or initialize an empty array if none exists
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+  // Add the new item to the cart array
+  cart.push({ name: itemName, price: itemPrice });
+  
+  // Save the updated cart back to localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+  
+  // Change the button text to "Added to Cart"
+  let button = event.target; // The button that was clicked
+  let originalText = button.innerText; // Store the original text of the button
+  button.innerText = "Added to Cart";
+
+  // Set a timeout to revert the text back after 2 seconds (2000ms)
+  setTimeout(function() {
+    button.innerText = originalText;
+  }, 2000); // Reset the button text after 2 seconds
+}
+
       </script>
 </body>
 <footer> 
