@@ -59,7 +59,7 @@
         </select>
 
         <div class="order-submit-container">
-          <button type="button" class="order-submit-btn" onclick="window.location.href='orderFinal.html'">Place Order</button>
+          <button type="button" class="order-submit-btn" onclick=clearCart()>Place Order</button>
         </div>
       </form>
     </div>
@@ -101,6 +101,18 @@
       // Reload the cart page to show the updated cart
       window.location.reload();
     }
+
+      function clearCart() {
+    // Clear the cart from localStorage
+    localStorage.removeItem('cart');
+
+    // Optional: Show a confirmation message or update the cart UI
+    
+    // Optional: Redirect or reload to reflect changes (if needed)
+    // window.location.reload();
+    window.location.href = 'orderFinal.html';
+}
+
   </script>  
 </body>
 <footer> 
