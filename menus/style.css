@@ -47,40 +47,6 @@ p{
 .button:hover{
     background-color: #438578;
 }
-/*.bigCircle{
-    border-radius: 50%;
-    background-color: #FEB92F;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border: 7px solid #ffffff;
-}
-.smallCircle{
-    display: block;
-    border-radius: 50%;
-    background-color: #FF866B;
-    width: 150px;
-    height: 150px;
-    border: 7px solid #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#bigCircle1{
-    position: relative;
-    transform: translate(105%, -575%);
-}
-#bigCircle2{
-    position: relative;
-    transform: translate(605%, -600%);
-    z-index: -1;
-}
-#bigCircle3{
-    position: relative;
-    transform: translate(500%, -600%);
-    z-index: -1;
-}*/
 body{
     background-image: url('menu\ background\(9\).png');
     height: 1350px;
