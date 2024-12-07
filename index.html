@@ -46,11 +46,15 @@
 <div class="dailyspecial"> 
   <h1 id="dailySpecialTitle"> Daily Special</h1>
   <p id="dailySpecialName">Rainbow Harvest Buddha Bowl</p>
-  <a id="img-btn" href="index.html#dailyspecial" onclick="addToCart('Rainbow Harvest Buddha Bowl', 12.99)">
-    <img id="dailyImg" class="dailyImg" src="dailyspecial.jpeg" alt="plate" data-order="Order Now!">
-  </a>
   
+  <a id="img-btn" href="index.html#dailyspecial" onclick="addToCart('Rainbow Harvest Buddha Bowl', 12.99)">
+    <div class="dailyImg-container">
+      <img id="dailyImg" class="dailyImg" src="dailyspecial.jpeg" alt="plate">
+      <div class="caption">Order Now!</div>
+    </div>
+  </a>
 </div>
+
 <section id="aboutus" role="region">
   <div class="aboutus"> 
     <h1>About Us</h1>
@@ -63,7 +67,7 @@
     <!-- Slide 1 -->
     <div class="mySlides fade">
       <p>"Amazing food and great service!"</p>
-      <p>- John Doe</p>
+      <p>- John Doe</p> 
       <div class="stars">
         ★★★★☆ <!-- 4 out of 5 stars -->
       </div>

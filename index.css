@@ -332,4 +332,40 @@ footer a:hover {
 #dailySpecialName{
     font-size: 20;
 }
+
+/* Container for the image and caption */
+.dailyImg-container {
+    position: relative;
+    display: inline-block;
+  }
+  .dailyImg {
+    position: relative;
+    height:500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-top: 60px; 
+    margin-left: -90px; 
+}
+  
+  /* Caption text */
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show caption on hover */
+  .dailyImg-container:hover .caption {
+    visibility: visible;
+    opacity: 1;
+  }
   
