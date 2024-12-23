@@ -299,18 +299,42 @@ footer {
     font-size: 16px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow above the footer */
 }
-
-/* Footer link styling */
-footer a {
-    color: #a07f65; /* Highlight link color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth hover effect */
+/* Footer container styling */
+.footer-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center the entire footer content horizontally */
+    gap: 20px; /* Add space between text and the map */
+    flex-wrap: wrap; /* Wrap content for smaller screens */
+    background-color: #333333; /* Footer background color */
+    color: #ffffff; /* Text color */
+    padding: 20px; /* Add padding around the content */
 }
 
-footer a:hover {
-    color: #ffffff; /* Changes link color on hover */
+/* Footer text styling */
+.footer-text {
+    text-align: left; /* Align text to the left */
 }
+
+/* Footer map styling */
+.footer-map iframe {
+    border: 0; /* Remove iframe border */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the map */
+    border-radius: 8px; /* Add rounded corners to the map */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text and map for smaller screens */
+    }
+    .footer-map iframe {
+        width: 100%; /* Make the map responsive */
+        max-width: 300px; /* Set a maximum width for the map */
+    }
+}
+
 
 .stars {
     font-size: 24px;  /* Adjust the size of the stars */
