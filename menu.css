@@ -7,8 +7,9 @@ body {
     font-family: "Julius Sans One", sans-serif;
     background-repeat: no-repeat; 
     background-size: cover; 
-    background-position: center; /* Center the image */
-    margin: 0; /* Remove default margins */
+    background-position: center; 
+    margin: 0; 
+    background-size: cover;
 }
 
 p,h1, button {
@@ -118,11 +119,11 @@ nav ul li a:hover {
 }
 
 
-.circular-button:nth-child(1) { top: 290px; left: 980px; }
-.circular-button:nth-child(2) { top: 150px; left: 200px; }
-.circular-button:nth-child(3) { top: 240px; left: 1100px; }
-.circular-button:nth-child(4) { top: 180px; left: 690px; }
-.circular-button:nth-child(5) { top: 250px; left: 140px; }
+.circular-button:nth-child(1) { top: 75%; left: 68% }
+.circular-button:nth-child(2) { top: 50%; left: 10%; }
+.circular-button:nth-child(3) { top: 60%; left: 75%; }
+.circular-button:nth-child(4) { top: 43%; left: 47%; }
+.circular-button:nth-child(5) { top: 66%; left: 9.5%; }
 
 footer {
     background-color: #333333; /* Dark background color */

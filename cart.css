@@ -13,6 +13,7 @@ body {
     background-color: #83C5BE;
     margin: 0;
     padding: 0;
+    background-size: cover;
 }
   
 header {
@@ -84,6 +85,7 @@ h2{
     background-color: #fff;
     margin: 20px;
     border-radius: 8px;
+    margin-top: 75px;
 }
 
 .cart-container {
@@ -219,7 +221,7 @@ footer {
     margin-left: -1%;
     margin-right:-1%;
     bottom: 0;
-    margin-top: 20%;
+    margin-top: 0;
     margin-bottom:-2%;
     font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
     font-size: 16px;
