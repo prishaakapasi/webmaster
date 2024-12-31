@@ -1,17 +1,48 @@
 body {
     font-family: "Julius Sans One", sans-serif;
     background-color: #83C5BE;
-    margin: 0;
+    margin: 25%;
     padding: 0;
     display: flex;
     flex-direction: column; /* Ensures body stretches in vertical layout */
-    min-height: 150vh; /* Makes body height equal to viewport height */
+    min-height: 100vh; /* Makes body height equal to viewport height */
+    overflow:hidden;
 }
 
 h1 {
     text-align: center;
 }
-
+.wrapper {
+    display: grid;
+    place-items: center;
+    padding-bottom: 325px;
+  }
+  
+  .typing-demo {
+    width: 26ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    line-height: 1.5; /* Space between lines */
+    color: #333; /* Text color */
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 #title {
     margin-top: 400px;
 }
@@ -64,8 +95,6 @@ nav ul li a:hover {
         margin: 10px 0;
     }
 }
-
-/* Footer Fix */
 footer {
     background-color: #333333; /* Dark background color */
     color: #ffffff; /* White text color */
@@ -73,10 +102,12 @@ footer {
     padding: 20px 0; /* Add vertical padding */
     font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
     font-size: 16px;
-    margin: 0; /* Remove unnecessary margins */
-    margin-top: auto; /* Pushes footer to the bottom when content is less */
+    margin: 0;
+    width: 100%; 
 }
-
+.content {
+    flex: 1; /* Allow the content area to take up the available space */
+  }
 footer a {
     color: #a07f65; /* Highlight link color */
     text-decoration: none; /* Remove underline from links */
