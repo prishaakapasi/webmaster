@@ -100,21 +100,22 @@ footer {
     color: #ffffff; /* White text color */
     text-align: center; /* Center-align text */
     padding: 20px 0; /* Add vertical padding */
+    margin-left: -1%;
+    margin-right:-1%;
+    bottom: 0;
+    margin-top: 20%;
+    margin-bottom:-2%;
     font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
     font-size: 16px;
-    margin: 0;
-    width: 100%; 
-}
-.content {
-    flex: 1; /* Allow the content area to take up the available space */
-  }
-footer a {
+    }
+    
+    footer a {
     color: #a07f65; /* Highlight link color */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold;
     transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-footer a:hover {
+    }
+    
+    footer a:hover {
     color: #ffffff; /* Changes link color on hover */
-}
+    }
