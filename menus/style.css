@@ -51,8 +51,9 @@ body{
     background-image: url('menu\ background\(9\).png');
     height: 1350px;
     font-family: "Julius Sans One", sans-serif;
+    background-size: cover;
 }
-/* List items within the nav */
+
 nav {
     background-color: white; 
     padding: 20px 20px; 
