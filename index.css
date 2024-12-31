@@ -15,12 +15,13 @@ body {
 
 h3 {
     text-align: center;
+    font-size: 30px;
 
 }
 #dailySpecialTitle {
     position: relative;
     margin-left: 25px;
-    font-size: 20;
+    font-size: 40px;
 }
 
 .dailyImg {
@@ -35,7 +36,7 @@ h3 {
 .waviy {
     margin: 0 auto; 
     text-align: center; 
-    font-size: 60px;
+    font-size: 75px;
     margin-top: 20%;
   }
   .waviy span {
@@ -247,7 +248,7 @@ button span {
     justify-content: center;
     text-align: center;
     width: 60%;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 h1 {
@@ -267,7 +268,7 @@ h1 {
 }
 
 .mySlides p {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     color: #333;
 }
