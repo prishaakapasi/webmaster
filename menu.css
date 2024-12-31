@@ -10,6 +10,7 @@ body {
     background-position: center; 
     margin: 0; 
     background-size: cover;
+    overflow-x: hidden;
 }
 
 p,h1, button {
@@ -124,6 +125,13 @@ nav ul li a:hover {
 .circular-button:nth-child(3) { top: 60%; left: 75%; }
 .circular-button:nth-child(4) { top: 43%; left: 47%; }
 .circular-button:nth-child(5) { top: 66%; left: 9.5%; }
+
+.dessertIcon{
+ margin-bottom: 80%;
+ margin-left: 80%;
+ position: absolute;
+ top: 12%;
+}
 
 footer {
     background-color: #333333; /* Dark background color */
