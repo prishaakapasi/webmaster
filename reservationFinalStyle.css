@@ -1,6 +1,7 @@
 body{
     font-family: "Julius Sans One", sans-serif;
     background-image: url('Reservation1.png');
+    background-size: cover;
 }
 h1{
     text-align: center;
