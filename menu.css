@@ -120,11 +120,11 @@ nav ul li a:hover {
 }
 
 
-.circular-button:nth-child(1) { top: 75%; left: 68% }
-.circular-button:nth-child(2) { top: 50%; left: 10%; }
-.circular-button:nth-child(3) { top: 60%; left: 75%; }
-.circular-button:nth-child(4) { top: 43%; left: 47%; }
-.circular-button:nth-child(5) { top: 66%; left: 9.5%; }
+.circular-button:nth-child(1) { top: 78%; left: 69% }
+.circular-button:nth-child(2) { top: 53%; left: 10%; }
+.circular-button:nth-child(3) { top: 66%; left: 75%; }
+.circular-button:nth-child(4) { top: 49%; left: 47%; }
+.circular-button:nth-child(5) { top: 73%; left: 7%; }
 
 .dessertIcon{
  margin-bottom: 80%;
