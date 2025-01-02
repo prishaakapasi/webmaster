@@ -1,95 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
-
 body {
-    background-image: url('Main Menu Screen.png');
-    height: 100vh;
+    background-image: none;
     font-family: "Julius Sans One", sans-serif;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    margin: 0; 
-    background-size: cover;
+    margin: 0;
     overflow-x: hidden;
-    background-position: center -20%;
 }
 
-p,h1, button {
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+nav {
+    background-color: white;
+    padding: 0.3%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    text-align: center;
-    margin-top: 7%; 
-    font-size: 2.5rem; 
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: teal;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 5vh;
     color: black;
 }
-h3 {
-    margin: 10px auto; 
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem; 
-    width: fit-content; 
-    display: block; 
-    position: relative; 
-    top: -20px; 
-}
-.headings{
-    margin-bottom: 10px;
-}
-nav {
-    background-color: white; 
-    padding: 20px 20px; 
-    position: fixed; 
-    width: 100%; 
-    top: 0; 
-    left: 0;
-    z-index: 1000; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
 
-/* Navigation list styling */
-nav ul {
-    list-style-type: none; /* Removes default bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    justify-content: space-around; /* Evenly spaces items across the bar */
-    align-items: center; /* Vertically centers items */
-}
-
-/* List items within the nav */
-nav ul li {
-    margin: 0 15px; /* Adds space between items */
-}
-
-/* Links within the nav */
-nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: black; /* Default link color */
-    font-weight: bold; 
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-/* Link hover effect */
-nav ul li a:hover {
-    color: teal; /* Changes color on hover */
+.nav-links.active {
+    transform: translateX(0);
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; 
-        align-items: center;
+    .nav-links {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 62%;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        gap: 6vw;
     }
-    nav ul li {
-        margin: 10px 0;
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
     }
 }
- .button-container {
+
+.map-container {
     position: relative;
     width: 100%;
-    height: 500px; /* Adjust height as needed */
+    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 90%; /* Image will scale up to container width */
+    max-height: 90%;
+}
+
+.map-container img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Image will scale up to container width */
+    max-height: 100%;
+}
+
+.button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .circular-button {
@@ -101,6 +106,7 @@ nav ul li a:hover {
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.2s;
+    transform: translate(-50%, -50%);
 }
 
 .circular-button:hover {
@@ -109,9 +115,9 @@ nav ul li a:hover {
 }
 
 .circular-button::after {
-    content: attr(data-country); /* Fetch country name from data attribute */
+    content: attr(data-country);
     position: absolute;
-    top: 70px; /* Position below the button */
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
@@ -129,14 +135,13 @@ nav ul li a:hover {
     opacity: 1;
 }
 
+.headings{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 7%;
+}
 
-.circular-button:nth-child(1) { top: 78%; left: 69% }
-.circular-button:nth-child(2) { top: 53%; left: 10%; }
-.circular-button:nth-child(3) { top: 66%; left: 75%; }
-.circular-button:nth-child(4) { top: 49%; left: 47%; }
-.circular-button:nth-child(5) { top: 73%; left: 7%; }
-
-.dessertIcon{
+.dessert-icon{
  margin-bottom: 80%;
  margin-left: 80%;
  position: absolute;
@@ -144,27 +149,26 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333333; /* Dark background color */
-    color: #ffffff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Add vertical padding */
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
     margin-left: -1%;
     margin-right:-1%;
     bottom: 0;
     margin-top: 20%;
     margin-bottom:-2%;
-    font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
+    font-family: "Julius Sans One", sans-serif;
     font-size: 16px;
     }
     
     footer a {
-    color: #a07f65; /* Highlight link color */
-    text-decoration: none; /* Remove underline from links */
+    color: #a07f65;
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth hover effect */
+    transition: color 0.3s ease;
     }
     
     footer a:hover {
-    color: #ffffff; /* Changes link color on hover */
+    color: #ffffff;
     }
-    
