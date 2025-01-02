@@ -309,8 +309,11 @@ footer {
     margin-top: 10%;
     width: 100%; 
     font-family: "Julius Sans One", sans-serif; 
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+    padding-bottom: 10px;
+    padding-top: 10px;
+
 }
 
 .footer-container {
@@ -321,7 +324,7 @@ footer {
     flex-wrap: wrap;
     background-color: #333333;
     color: #ffffff;
-    padding: 20px;
+    padding: 5px;
 }
 
 .footer-text {

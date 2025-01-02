@@ -67,7 +67,7 @@ div {
     margin: auto; /* Centers the box */
     margin-top: 20px; /* Reduce vertical margin */
     border-radius: 20px; /* Slightly round corners */
-    font-size: 24px; /* Larger font size */
+    font-size: 2vw; /* Larger font size */
     text-align: center; /* Center-align text and children elements */
     padding: 20px; /* Reduce padding for less space */
     overflow-y: auto; /* Allow scrolling if content overflows */
@@ -82,7 +82,7 @@ p {
     margin: 0; /* Remove default margin */
     padding: 0;
     margin-top: 10px; /* Add a smaller gap */
-    font-size: 24px; /* Increase font size for paragraph text */
+    font-size: 1.4vw; /* Increase font size for paragraph text */
 }
 
 a {
@@ -101,7 +101,7 @@ button {
     align-items: center; /* Vertically centers the text */
     justify-content: center; /* Horizontally centers the text */
     font-family: "Julius Sans One", sans-serif;
-    font-size: 18px;
+    font-size: 1.4vw;
     font-weight: 400;
     text-transform: uppercase;
     padding: 20px 30px;
@@ -167,7 +167,7 @@ footer {
     margin-top: 20px;
     margin-bottom:-2%;
     font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
-    font-size: 16px;
+    font-size: 1.2vw;
     }
     
     footer a {
