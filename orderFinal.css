@@ -1,147 +1,181 @@
-body {
-    font-family: "Julius Sans One", sans-serif;
-    background-color: #83C5BE;
-    margin: 25%;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Ensures body stretches in vertical layout */
-    min-height: 100vh; /* Makes body height equal to viewport height */
-    overflow:hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
-h1 {
-    text-align: center;
-}
-.wrapper {
-    display: grid;
-    place-items: center;
-    padding-bottom: 325px;
-  }
-  
-  .typing-demo {
-    width: 26ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-weight: bold;
-    line-height: 1.5; /* Space between lines */
-    color: #333; /* Text color */
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-#title {
-    margin-top: 400px;
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #83C5BE;
+    height: 120vh;
 }
 
 nav {
-  background-color: white;
-  padding: 0.3%;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 0.3%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .nav-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
 }
-
 
 .nav-links li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
-
 
 .nav-links a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
-
 
 .nav-links a:hover {
-  color: teal;
+    color: teal;
 }
-
 
 .menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 4vw;
-  color: black;
+    display: none;
+    cursor: pointer;
+    font-size: 4vw;
+    color: black;
 }
-
 
 .nav-links.active {
-  transform: translateX(0);
+    transform: translateX(0);
 }
-
 
 @media (max-width: 768px) {
-  .nav-links {
-      flex-direction: column;
-      background-color: white;
-      position: absolute;
-      top: 62%;
-      left: 0;
-      width: 50%;
-      transform: translateX(-100%);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      gap: 6vw;
-  }
+    .nav-links {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 62%;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        gap: 6vw;
+    }
 
+    .menu-toggle {
+        display: block;
+    }
 
-  .menu-toggle {
-      display: block;
-  }
-
-
-  .nav-links.active {
-      transform: translateX(0);
-  }
+    .nav-links.active {
+        transform: translateX(0);
+    }
 }
-footer {
-    background-color: #333333; /* Dark background color */
-    color: #ffffff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Add vertical padding */
-    margin-left: -1%;
-    margin-right:-1%;
-    bottom: 0;
+
+#text {
+    text-align: center;
     margin-top: 20%;
-    margin-bottom:-2%;
-    font-family: "Julius Sans One", sans-serif; /* Matches the font of the rest */
-    font-size: 16px;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 5vh;
+}
+h2{
+    font-size: 3vh;
+}
+h1, h2 {
+    color: black;
+    font-family: "Julius Sans One", sans-serif;
+    white-space: nowrap;
+    margin: 10px auto;
+    letter-spacing: .15em;
+    position: relative;
+    display: block; /* Key for correct layout */
+}
+
+h1 span {
+    overflow: hidden;
+    display: inline-block;
+    border-right: .1em solid black;
+    animation: typing1 5s steps(22, end) forwards, blink-caret1 .5s step-end infinite;
+}
+
+h2 span {
+    overflow: hidden;
+    display: inline-block;
+    border-right: .1em solid black;
+    animation: typing2 5s steps(18, end) forwards, blink-caret2 .5s step-end infinite;
+}
+
+@keyframes typing1 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes typing2 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret1 {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@keyframes blink-caret2 {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+    font-size: 1.2vw;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.footer-map iframe {
+    border: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    footer a {
-    color: #a07f65; /* Highlight link color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth hover effect */
+
+    .footer-map iframe {
+        width: 100%;
     }
-    
-    footer a:hover {
-    color: #ffffff; /* Changes link color on hover */
-    }
+}
