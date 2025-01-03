@@ -9,6 +9,11 @@ h1{
 #title{
     margin-top: 400px;
 }
+body, html {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 nav {
     background-color: white;
     padding: 0.3%;

@@ -84,7 +84,11 @@ p {
 margin-left: 15px;
 margin-right: 15px;
 }
-
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 nav {
   background-color: white;
   padding: 0.3%;

@@ -7,15 +7,15 @@ fieldset {
     padding: 40px;
     border-radius: 40px;
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of items */
-    gap: 20px; /* Space between the items */
-    justify-content: space-between; /* Ensures even spacing across the grid */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
   }
   
   label {
-    flex: 1 1 calc(33.33% - 20px); /* Each label takes up one-third of the row */
+    flex: 1 1 calc(33.33% - 20px);
     display: flex;
-    flex-direction: column; /* Keeps the input below the label text */
+    flex-direction: column; 
   }
   
   input, select {
@@ -25,7 +25,7 @@ fieldset {
     background-color: white;
     border-radius: 5px;
     padding: 5px;
-    box-sizing: border-box; /* Includes padding in width calculation */
+    box-sizing: border-box;
     border: 1px solid #333333;
   }
   body{
@@ -33,6 +33,8 @@ fieldset {
     background-image: url('Reservation1.png');
     height: 824px;
     background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 #title, #description{
     text-align: center;
@@ -45,20 +47,20 @@ fieldset {
 button {
     width: 100%;
     height: 50px;
-    position: relative; /* Needed for pseudo-element positioning */
+    position: relative; 
     font-family: "Julius Sans One", sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     padding: 10px 20px;
-    margin: 10px; /* Adds spacing between buttons */
+    margin: 10px; 
     display: inline-block; 
-    color: #ffffff; /* Default text color */
+    color: #ffffff; 
     background-color: #333333;
-    border: 2px solid #333333; /* Invisible by default */
+    border: 2px solid #333333; 
     border-radius: 5px;
-    overflow: hidden; /* Hides the animated pseudo-element overflow */
-    z-index: 1; /* Ensures the button itself stays above pseudo-elements */
+    overflow: hidden; 
+    z-index: 1; 
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -74,18 +76,18 @@ button::before {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #ffffff; /* Animation fill color */
-    z-index: 0; /* Places it behind the text */
+    background-color: #ffffff; 
+    z-index: 0;
     transition: all 0.5s ease;
 }
 
 button:hover::before {
-    left: 0; /* Moves the fill into view */
+    left: 0; 
 }
 
 button:hover {
-    color: #333333; /* Changes text color on hover */
-    transform: scale(1.05); /* Slightly scales the button */
+    color: #333333; 
+    transform: scale(1.05); 
     border-color: #333333;
 }
 
@@ -106,6 +108,12 @@ button:active {
     transform: scale(0.95); /* Adds a pressed effect */
     box-shadow: 0 3px 5px #333333;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: white;
     padding: 0.3%;
@@ -114,50 +122,43 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- }
- 
- 
- .nav-links {
+}
+
+.nav-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     transition: transform 0.3s ease-in-out;
- }
- 
- 
- .nav-links li {
+}
+
+.nav-links li {
     margin: 0 15px;
- }
- 
- 
- .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     transition: color 0.3s ease;
- }
- 
- 
- .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: teal;
- }
- 
- 
- .menu-toggle {
+}
+
+.menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 4vw;
     color: black;
- }
- 
- 
- .nav-links.active {
+}
+
+.nav-links.active {
     transform: translateX(0);
- }
- 
- 
- @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         background-color: white;
@@ -169,17 +170,15 @@ nav {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         gap: 6vw;
     }
- 
- 
+
     .menu-toggle {
         display: block;
     }
- 
- 
+
     .nav-links.active {
         transform: translateX(0);
     }
- } 
+}
 footer {
     background-color: #333333; /* Dark background color */
     color: #ffffff; /* White text color */
