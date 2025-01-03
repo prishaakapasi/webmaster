@@ -9,7 +9,7 @@ h1{
     font-size: 8vw;
 }
 .container {
-    width: 30%; /* 3 items per row by default */
+    width: 28%; /* 3 items per row by default */
     box-sizing: border-box;
     text-align: center;
     height: 60vh;
