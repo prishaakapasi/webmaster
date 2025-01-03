@@ -155,7 +155,10 @@ nav {
     top: 12%;
     
    }
-
+#drink, #dessert{
+    width: 7vw;
+    height: 7vw;
+}
 .circle{
     display: flex;
     justify-content: center; /* Horizontally center */
