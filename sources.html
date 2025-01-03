@@ -16,7 +16,7 @@
  </head>
  <body>
     <nav>
-        <ul>
+      <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#aboutus">About Us</a></li>
           <li><a href="ourProcess.html">Our Process</a></li>
@@ -50,6 +50,12 @@
 
     </div>    
  </body>
+ <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
  <footer> 
     <h4> 10976 Vegan Way</h4>
     <h4> San Diego, CA 22434</h4>

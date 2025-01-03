@@ -10,53 +10,79 @@ h1{
     margin-top: 400px;
 }
 nav {
-    background-color: white; 
-    padding: 20px 20px; 
-    position: fixed; 
-    width: 100%; 
-    top: 0; 
-    left: 0;
-    z-index: 1000; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
-
-/* Navigation list styling */
-nav ul {
-    list-style-type: none; /* Removes default bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    justify-content: space-around; /* Evenly spaces items across the bar */
-    align-items: center; /* Vertically centers items */
-}
-
-/* List items within the nav */
-nav ul li {
-    margin: 0 15px; /* Adds space between items */
-}
-
-/* Links within the nav */
-nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: black; /* Default link color */
-    font-weight: bold; 
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-/* Link hover effect */
-nav ul li a:hover {
-    color: teal; /* Changes color on hover */
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; 
-        align-items: center;
+    background-color: white;
+    padding: 0.3%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ 
+ .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+ }
+ 
+ 
+ .nav-links li {
+    margin: 0 15px;
+ }
+ 
+ 
+ .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+ }
+ 
+ 
+ .nav-links a:hover {
+    color: teal;
+ }
+ 
+ 
+ .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 4vw;
+    color: black;
+ }
+ 
+ 
+ .nav-links.active {
+    transform: translateX(0);
+ }
+ 
+ 
+ @media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 62%;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        gap: 6vw;
     }
-    nav ul li {
-        margin: 10px 0;
+ 
+ 
+    .menu-toggle {
+        display: block;
     }
-}
+ 
+ 
+    .nav-links.active {
+        transform: translateX(0);
+    }
+ } 
 footer {
     background-color: #333333; /* Dark background color */
     color: #ffffff; /* White text color */

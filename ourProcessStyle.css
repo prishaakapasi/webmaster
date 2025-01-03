@@ -87,50 +87,77 @@ margin-right: 15px;
 
 nav {
   background-color: white;
-  padding: 20px 20px;
+  padding: 0.3%;
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 0;
 }
 
-/* Navigation list styling */
-nav ul {
-  list-style-type: none; /* Removes default bullet points */
-  margin: 0;
-  padding: 0;
+
+.nav-links {
   display: flex;
-  justify-content: space-around; /* Evenly spaces items across the bar */
-  align-items: center; /* Vertically centers items */
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* List items within the nav */
-nav ul li {
-  margin: 0 15px; /* Adds space between items */
+
+.nav-links li {
+  margin: 0 15px;
 }
 
-/* Links within the nav */
-nav ul li a {
-  text-decoration: none; /* Removes underline from links */
-  color: black; /* Default link color */
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  transition: color 0.3s ease;
 }
 
-/* Link hover effect */
-nav ul li a:hover {
-  color: teal; /* Changes color on hover */
+
+.nav-links a:hover {
+  color: teal;
 }
+
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 4vw;
+  color: black;
+}
+
+
+.nav-links.active {
+  transform: translateX(0);
+}
+
 
 @media (max-width: 768px) {
-  nav ul {
+  .nav-links {
       flex-direction: column;
-      align-items: center;
+      background-color: white;
+      position: absolute;
+      top: 62%;
+      left: 0;
+      width: 50%;
+      transform: translateX(-100%);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      gap: 6vw;
   }
-  nav ul li {
-      margin: 10px 0;
+
+
+  .menu-toggle {
+      display: block;
+  }
+
+
+  .nav-links.active {
+      transform: translateX(0);
   }
 }
 
