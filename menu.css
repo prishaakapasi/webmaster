@@ -145,6 +145,34 @@ nav {
  margin-left: 80%;
  position: absolute;
  top: 12%;
+ 
+}
+
+.drinks-icon{
+    margin-bottom: 80%;
+    margin-left: 9%;
+    position: absolute;
+    top: 12%;
+    
+   }
+
+.circle{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    margin-bottom: 80%;
+    margin-left: -20%;
+    position: absolute;
+    top: 12%;
+    width: 10vw;
+    height: 10vw;
+    background-color: #FFE66D;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    background-color: #f7d700;
+    transform: scale(1.1);
 }
 
 footer {
