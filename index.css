@@ -10,6 +10,7 @@ body {
     background-attachment: scroll; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    overflow-x: hidden;
 }
 
 h3 {
@@ -34,7 +35,7 @@ h3 {
 .waviy {
     margin: 0 auto; 
     text-align: center; 
-    font-size: 5.5vw;
+    font-size: 5.3vw;
     margin-top: 20%;
 }
 .waviy span {
@@ -266,7 +267,8 @@ button span {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .slideshow-container {
@@ -377,11 +379,31 @@ footer {
 
 .dailyImg {
     position: relative;
-    height:550px;
-    width: 550px;
+    height: 40vw;
+    width: 40vw;
+    max-height: 550px;
+    max-width: 550px;
     border-radius: 50%;
-    margin-top: 40px; 
-    margin-left: -80px; 
+    margin-top: -1%;
+    margin-left: -15%;
+}
+
+@media (max-width: 768px) {
+    .dailyImg {
+        height: 50vw;
+        width: 50vw;
+        margin-top: 8%;
+        margin-left: -3%;
+    }
+}
+
+@media (max-width: 480px) {
+    .dailyImg {
+        height: 60vw;
+        width: 60vw;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
 }
 
 .caption {
@@ -397,6 +419,7 @@ footer {
     visibility: hidden;
 }
 
-.dailyImg:hover .caption {
+.dailyImg-container:hover .caption {
     visibility: visible;
 }
+
