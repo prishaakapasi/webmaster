@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: none;
 }
 
 nav {
@@ -70,6 +71,7 @@ nav {
 
 body {
     font-family: "Julius Sans One", sans-serif;
+    height: 824px;
 }
 
 h1 {
