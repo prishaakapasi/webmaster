@@ -43,7 +43,7 @@ nav {
 .menu-toggle {
     display: none;
     cursor: pointer;
-    font-size: 5vh;
+    font-size: 4vw;
     color: black;
 }
 
@@ -70,6 +70,15 @@ nav {
 
     .nav-links.active {
         transform: translateX(0);
+    }
+    h3{
+        margin-top: -5%;
+        font-size: 1em;
+    }
+    circle {
+        width: 1vw;  
+        height: 1vh; 
+        margin-bottom: -10%; 
     }
 }
 
@@ -161,7 +170,7 @@ nav {
 }
 .circle{
     display: flex;
-    justify-content: center; /* Horizontally center */
+    justify-content: center; 
     align-items: center;
     margin-bottom: 80%;
     margin-left: -20%;

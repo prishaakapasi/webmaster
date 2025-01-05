@@ -99,20 +99,13 @@
 </div>
 <script>
   function addToCart(itemName, itemPrice) {
-    // Get existing cart from localStorage, or initialize an empty array if none exists
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     
     // Add the new item to the cart array
     cart.push({ name: itemName, price: itemPrice });
     
-    // Save the updated cart back to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
-    
-    // Redirect to the cart page
-    //window.location.href = '../cart.html';
   }
-</script>
-<script>
   function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
