@@ -14,10 +14,9 @@ margin-right: 15px;
 body {
 background-image: url('our\ process.png');
 background-attachment: scroll;
-background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; 
+background-repeat: no-repeat; 
 font-family: "Julius Sans One", sans-serif;
-background-size: cover;
 }
 
 .frontImg {
