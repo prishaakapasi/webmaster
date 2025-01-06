@@ -1,7 +1,8 @@
 body{
     font-family: "Julius Sans One", sans-serif;
     background-image: url('Reservation1.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 h1{
     text-align: center;
@@ -141,5 +142,47 @@ footer {
       font-weight: 400;
       font-style: normal;
   }
+
+  @media (max-width: 480px) {
+   body {
+     margin: 0;
+     padding: 0;
+   }
+ 
+   nav {
+     width: 100%;
+     padding: 1%;
+   }
+ 
+   .nav-links {
+     flex-direction: column;
+     width: 100%;
+   }
+ 
+   .nav-links li {
+     width: 100%;
+     text-align: center;
+   }
+ 
+   #title {
+     margin: 0;
+     padding: 20px;
+     text-align: center;
+   }
+ 
+   footer {
+     width: 100%;
+     padding: 20px 0;
+     text-align: center;
+   }
+ 
+   .footer-container {
+     width: 100%;
+     padding: 10px;
+     flex-direction: column;
+     gap: 10px;
+   }
+ }
+ 
   
     
