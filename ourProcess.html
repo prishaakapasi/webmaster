@@ -1,107 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Webmaster Our Process page" />
-  <title>Our Process</title>
-  <link rel="stylesheet" href="ourProcessStyle.css" />
-  <script src="ourProcess.jsx" defer></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="Webmaster Our Process page" />
+ <title>Our Process</title>
+ <link rel="stylesheet" href="ourProcessStyle.css" />
+ <style>
+   @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
-    p,h1,h2 {
-        font-family: "Julius Sans One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
+
+   p,h1,h2 {
+       font-family: "Julius Sans One", sans-serif;
+       font-weight: 400;
+       font-style: normal;
+   }
 </style>
 </head>
 <body>
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div> <ul class="navitems">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#aboutus">About Us</a></li>
-      <li><a href="ourProcess.html">Our Process</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="reservation.html">Reserve</a></li>
-      <li><a href="sources.html">Sources</a></li>
-      <li><a href="cart.html">Cart</a></li>
-    </ul>
-  </nav>
-    <h1>Our Process</h1>
-    <div class="cards">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h2>Our Ingredients: vegetables</h2>
-            <img src="vegetables.jpeg" class ="frontImg" alt="ingredients">
-          </div>
-          <div class="flip-card-back">
-            <h2>fresh vegetables:</h2>
-            <p>Our restaurant is committed to serving the freshest, most flavorful dishes by sourcing our vegetables directly from local farms. We proudly partner with trusted growers who share our passion for sustainability and quality. </p>
-            <p>All of our vegetables are produced without the use of pesticides and harmful chemicals. This farm-to-table approach ensures every meal is not only delicious but also supports our community and the environment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h2>Our Ingredients: bread and gluten products </h2>
-            <img src="gluten.jpeg" class="frontImg" alt="ingredients">
-          </div>
-          <div class="flip-card-back">
-            <h2>Bread/Gluten Products</h2>
-            <p>We craft dishes with wholesome, gluten-friendly options made from nutrient-rich whole grains. We source high-quality whole wheat and other gluten-conscious ingredients to ensure every bite is as nourishing as it is delicious.</p>
-            <p>Whether you're savoring our breads, pastas, or baked goods, you can taste the care and dedication we put into creating flavorful, hearty options that support a balanced lifestyle</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h2>Our Ingredients: vegan dairy products</h2>
-            <img src="dairy.jpeg" class= "frontImg" alt="ingredients">
-          </div>
-          <div class="flip-card-back">
-            <h2>Vegan dairy</h2>
-            <p>Our restaurant is proud to offer a delicious selection of all-vegan dairy alternatives, crafted with care and creativity. From creamy plant-based cheeses to rich almond and oat milk, every ingredient is thoughtfully sourced to deliver the perfect balance of flavor and sustainability.</p>
-            <p> By embracing innovative, cruelty-free production methods, we bring you the taste and texture you love—without compromise.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <script>
-        function toggleMenu() {
-          const navLinks = document.querySelector('.nav-links');
-          navLinks.classList.toggle('active');
-        }
-      </script>
+ <nav>
+   <div class="menu-toggle" onclick="toggleMenu()">
+     ☰
+   </div>
+   <ul class="nav-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="index.html#aboutus">About Us</a></li>
+     <li><a href="ourProcess.html">Our Process</a></li>
+     <li><a href="menu.html">Menu</a></li>
+     <li><a href="reservation.html">Reserve</a></li>
+     <li><a href="sources.html">Sources</a></li>
+     <li><a href="cart.html"><img src="shoppingcart.png" alt="Cart" style="width: 40px; height: 30px;"/></a></li>
+   </ul>
+ </nav>
+   <h1>Our Process</h1>
+   <video id="video" autoplay loop muted>
+    <source src="video.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p class="caption"> Our restaurant sources fresh, locally-grown produce directly from the farm, bringing it to your table.</p>
+   <div class="cards">
+   <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <h2>Our Ingredients: vegetables</h2>
+           <img src="vegetables.jpeg" class ="frontImg" alt="ingredients">
+         </div>
+         <div class="flip-card-back">
+           <h2>fresh vegetables:</h2>
+           <p>Our restaurant is committed to serving the freshest, most flavorful dishes by sourcing our vegetables directly from local farms. We proudly partner with trusted growers who share our passion for sustainability and quality. </p>
+           <p>All of our vegetables are produced without the use of pesticides and harmful chemicals. This farm-to-table approach ensures every meal is not only delicious but also supports our community and the environment.</p>
+         </div>
+       </div>
+     </div>
+     <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <h2>Our Ingredients: bread and gluten products </h2>
+           <img src="gluten.jpeg" class="frontImg" alt="ingredients">
+         </div>
+         <div class="flip-card-back">
+           <h2>Bread/Gluten Products</h2>
+           <p>We craft dishes with wholesome, gluten-friendly options made from nutrient-rich whole grains. We source high-quality whole wheat and other gluten-conscious ingredients to ensure every bite is as nourishing as it is delicious.</p>
+           <p>Whether you're savoring our breads, pastas, or baked goods, you can taste the care and dedication we put into creating flavorful, hearty options that support a balanced lifestyle</p>
+         </div>
+       </div>
+     </div>
+     <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <h2>Our Ingredients: vegan dairy products</h2>
+           <img src="dairy.jpeg" class= "frontImg" alt="ingredients">
+         </div>
+         <div class="flip-card-back">
+           <h2>Vegan dairy</h2>
+           <p>Our restaurant is proud to offer a delicious selection of all-vegan dairy alternatives, crafted with care and creativity. From creamy plant-based cheeses to rich almond and oat milk, every ingredient is thoughtfully sourced to deliver the perfect balance of flavor and sustainability.</p>
+           <p> By embracing innovative, cruelty-free production methods, we bring you the taste and texture you love—without compromise.</p>
+         </div>
+       </div>
+     </div>
+     </div>
+     <script>
+       function toggleMenu() {
+         const navLinks = document.querySelector('.nav-links');
+         navLinks.classList.toggle('active');
+       }
+     </script>
 <footer>
-  <div class="footer-container">
-    <div class="footer-text">
-      <h4>10976 Vegan Way</h4>
-      <h4>San Diego, CA 22434</h4>
-      <h4>619-731-3231</h4>
-    </div>
-    <div class="footer-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9484165785316!2d-117.16108758468712!3d32.71573698109206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9533e03c0f0f7%3A0x9d1139c704345c3!2s10976%20Vegan%20Way%2C%20San%20Diego%2C%20CA%2022434%2C%20USA!5e0!3m2!1sen!2sus!4v1682471149000!5m2!1sen!2sus"
-        width="300"
-        height="200"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
- </footer>
+ <div class="footer-container">
+   <div class="footer-text">
+     <h4>10976 Vegan Way</h4>
+     <h4>San Diego, CA 22434</h4>
+     <h4>619-731-3231</h4>
+   </div>
+   <div class="footer-map">
+     <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9484165785316!2d-117.16108758468712!3d32.71573698109206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9533e03c0f0f7%3A0x9d1139c704345c3!2s10976%20Vegan%20Way%2C%20San%20Diego%2C%20CA%2022434%2C%20USA!5e0!3m2!1sen!2sus!4v1682471149000!5m2!1sen!2sus"
+       width="300"
+       height="200"
+       style="border:0;"
+       allowfullscreen=""
+       loading="lazy"
+       referrerpolicy="no-referrer-when-downgrade">
+     </iframe>
+   </div>
+ </div>
+</footer>
 </body>
-<script>
-	function toggleMenu() {
-  const navitems = document.querySelector('.navitems');
-  navitems.classList.toggle('active');
-}
-</script>
 </html>
