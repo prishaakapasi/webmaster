@@ -7,26 +7,37 @@ h1 {
 }
 
 h2 {
-margin-left: 15px;
-margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
+.hamburger {
+  display: block; /* Make it visible on small screens */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
 body {
-background-image: url('our\ process.png');
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-size: cover;
-font-family: "Julius Sans One", sans-serif;
-background-size: cover;
+  background-image: url('our\ process.png');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .frontImg {
-display: block;
-width: 75%;
-height: 30vh;
-margin: 20px auto;
-border-radius: 50px;
-margin-top: 40px;
+  display: block;
+  width: 75%;
+  height: 30vh;
+  margin: 20px auto;
+  border-radius: 50px;
+  margin-top: 40px;
 }
 
 .cards {
@@ -80,10 +91,12 @@ margin-top: 40px;
   backface-visibility: hidden;
   border-radius: 40px;
 }
-.flip-card-back{
+
+.flip-card-back {
   padding: 20px 30px;
   box-sizing: border-box;
 }
+
 .flip-card-front h1,
 .flip-card-back h1 {
   font-size: 3.5rem; 
@@ -135,52 +148,56 @@ margin-top: 40px;
 }
 
 p {
-margin-left: 15px;
-margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+
 body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-nav {
+
+.navbar {
   background-color: white;
-  padding: 0.3%;
-  position: fixed;
-  width: 100%;
+  padding: 0;
+  position: absolute; /* Change from fixed to absolute for dynamic positioning */
   top: 0;
+  left: -25%; /* Initially off-screen to the left */
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-left: 0;
+  height: 100vh; /* Full height */
+  width: 25%; 
+  transition: left 0.3s ease; 
 }
 
-
-.nav-links {
+.navitems {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column; /* Stack the links vertically */
+  justify-content: flex-start; /* Align links to the top */
+  align-items: flex-start; /* Align links to the left */
   list-style: none;
-  transition: transform 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-
-.nav-links li {
-  margin: 0 15px;
+.navitems li {
+  margin: 20px 0;
+  padding-left: 20px; /* Indentation for better visibility */
 }
 
-
-.nav-links a {
+.navitems a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
-
-.nav-links a:hover {
+.navitems a:hover {
   color: teal;
 }
-
 
 .menu-toggle {
   display: none;
@@ -189,33 +206,49 @@ nav {
   color: black;
 }
 
-
-.nav-links.active {
-  transform: translateX(0);
-}
-
-
 @media (max-width: 768px) {
-  .nav-links {
-      flex-direction: column;
-      background-color: white;
-      position: absolute;
-      top: 62%;
-      left: 0;
-      width: 50%;
-      transform: translateX(-100%);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      gap: 6vw;
+  .navbar {
+    width: 50%; /* Make the nav take up 50% of the screen width on mobile */
+    left: -100%; /* Off-screen to the left by default on mobile */
   }
-
+  
+  .hamburger {
+    font-size: 18px;
+  }
 
   .menu-toggle {
-      display: block;
+    display: block; /* Make sure it’s visible on mobile */
+    font-size: 30px; /* Adjust size if needed */
+    position: absolute; /* Position it at the top-left corner or anywhere you want */
+    top: 20px;
+    left: 20px;
+    cursor: pointer; /* Indicate it’s clickable */
+    z-index: 1001; /* Make sure it appears on top of other elements */
+  }
+  
+  .navitems {
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+    padding-top: 60px; /* Add padding for better spacing */
   }
 
+  .navitems.active {
+    transform: translateX(0); /* Slide the menu into view */
+  }
 
-  .nav-links.active {
-      transform: translateX(0);
+  nav.active {
+    left: 0; /* Slide the nav in when the 'active' class is added */
+  }
+  
+  .navitems li {
+    margin: 20px 0;
+    padding-left: 20px;
   }
 }
 
@@ -233,10 +266,7 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
   padding-top: 10px;
-
-
 }
-
 
 .footer-container {
   display: flex;
@@ -249,11 +279,9 @@ footer {
   padding: 5px;
 }
 
-
 .footer-text {
   text-align: left;
 }
-
 
 .footer-map iframe {
   border: 0;
@@ -261,14 +289,55 @@ footer {
   border-radius: 8px;
 }
 
-
 @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
   .footer-map iframe {
-      width: 100%;
-      max-width: 300px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .hamburger {
+    display: block; /* Ensure it's visible on mobile */
+    font-size: 24px; /* Adjust size for mobile if necessary */
+    color: black;
   }
 }
+ 
+.hamburger {
+  display: none; /* Hide by default */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navitems {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    }
+    .navitems.active {
+        display: flex;
+        transform: translateX(0);
+    }
+}
+
