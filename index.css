@@ -345,7 +345,7 @@ footer {
         text-align: center;
     }
     .footer-map iframe {
-        width: 100%;
+        width: 50%;
     }
 }
 
