@@ -9,19 +9,17 @@
 <body>
   <header>
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        ☰
-      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#aboutus">About Us</a></li>
-          <li><a href="ourProcess.html">Our Process</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="reservation.html">Reserve</a></li>
-          <li><a href="sources.html">Sources</a></li>
-          <li><a href="cart.html"><img src="shoppingcart.png" alt="Cart" style="width: 40px; height: 30px;"/></a></li>
-        </ul>
-      </nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#aboutus">About Us</a></li>
+        <li><a href="ourProcess.html">Our Process</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="cart.html"><img src="shoppingcart.png" alt="Cart" style="width: 40px; height: 30px;"/></a></li>
+      </ul>
+    </nav>
   </header>
   <script>
     function toggleMenu() {
@@ -32,29 +30,21 @@
   <section class="cart-main">
     <div class="cart-container">
       <h2>Your Cart</h2>
-
-      <p> Items added to cart will appear here! </p>
-
-
+      <p>Items added to cart will appear here!</p>
     </div>
   </section>
-
   <main class="order-main">
     <div class="order-form-container">
       <h1>Place Your Order</h1>
       <form action="#" method="POST" class="order-form">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
         <label for="address">Shipping Address</label>
         <textarea id="address" name="address" placeholder="Enter your shipping address" rows="4" required></textarea>
-
         <label for="payment-method">Payment Method</label>
         <select id="payment-method" name="payment-method" required>
           <option value="" disabled selected>Select a payment method</option>
@@ -62,7 +52,6 @@
           <option value="paypal">PayPal</option>
           <option value="bank-transfer">Bank Transfer</option>
         </select>
-
         <div class="order-submit-container">
           <button type="button" class="order-submit-btn" onclick=clearCart()>Place Order</button>
         </div>
@@ -70,54 +59,40 @@
     </div>
   </main>
   <script>
-    // Function to load cart items from localStorage and display them
-    window.onload = function() {
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-      let cartContainer = document.querySelector('.cart-container');
-      
+    window.onload = function () {
+      renderCart();
+    };
+    function renderCart() {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let cartContainer = document.querySelector(".cart-container");
+      cartContainer.innerHTML = `
+        <h2>Your Cart</h2>
+        <p>Items added to cart will appear here!</p>
+      `;
       if (cart.length === 0) {
         cartContainer.innerHTML = "<p>Your cart is empty!</p>";
       } else {
         cart.forEach((item, index) => {
-          // Create a div for each item
-          let itemDiv = document.createElement('div');
-          itemDiv.classList.add('cart-item');
-          
-          // Create content for item name, price, and delete button
+          let itemDiv = document.createElement("div");
+          itemDiv.classList.add("cart-item");
           itemDiv.innerHTML = `
             <p><strong>${item.name}</strong> - $${item.price}</p>
             <button class="delete-btn" onclick="removeFromCart(${index})">Delete</button>
           `;
-          
-          // Append the item to the cart container
           cartContainer.appendChild(itemDiv);
         });
       }
     }
-  
-    // Function to remove an item from the cart
     function removeFromCart(index) {
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-      cart.splice(index, 1); // Remove item from cart array
-      
-      // Save the updated cart back to localStorage
-      localStorage.setItem('cart', JSON.stringify(cart));
-      
-      // Reload the cart page to show the updated cart
-      window.location.reload();
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
     }
-
-      function clearCart() {
-    // Clear the cart from localStorage
-    localStorage.removeItem('cart');
-
-    // Optional: Show a confirmation message or update the cart UI
-    
-    // Optional: Redirect or reload to reflect changes (if needed)
-    // window.location.reload();
-    window.location.href = 'orderFinal.html';
-}
-
+    function clearCart() {
+      localStorage.removeItem("cart");
+      window.location.href = "orderFinal.html";
+    }
   </script>  
 </body>
 <footer>
@@ -141,3 +116,4 @@
   </div>
  </footer>
 </html>
+
