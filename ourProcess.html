@@ -6,6 +6,7 @@
   <meta name="description" content="Webmaster Our Process page" />
   <title>Our Process</title>
   <link rel="stylesheet" href="ourProcessStyle.css" />
+  <script src="ourProcess.jsx" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
@@ -18,17 +19,14 @@
 </head>
 <body>
   <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      ☰
-    </div>
-    <ul class="nav-links">
+    <div class="hamburger" onclick="toggleMenu()">☰</div> <ul class="navitems">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#aboutus">About Us</a></li>
       <li><a href="ourProcess.html">Our Process</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="reservation.html">Reserve</a></li>
       <li><a href="sources.html">Sources</a></li>
-      <li><a href="cart.html"><img src="shoppingcart.png" alt="Cart" style="width: 40px; height: 30px;"/></a></li>
+      <li><a href="cart.html">Cart</a></li>
     </ul>
   </nav>
     <h1>Our Process</h1>
@@ -100,4 +98,10 @@
   </div>
  </footer>
 </body>
+<script>
+	function toggleMenu() {
+  const navitems = document.querySelector('.navitems');
+  navitems.classList.toggle('active');
+}
+</script>
 </html>
