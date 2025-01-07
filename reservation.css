@@ -230,6 +230,7 @@ fieldset {
     text-align: center;
     padding: 20px 0;
     position: relative;
+    top: 8vh;
     margin-top: 10%;
     width: 100%;
     font-family: "Julius Sans One", sans-serif;
