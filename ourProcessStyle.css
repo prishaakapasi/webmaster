@@ -103,6 +103,11 @@ margin-top: 50px;
   align-items: center;
   justify-content: center;
  }
+
+ 
+ .flip-card-back h2{
+  margin-top: 5%;
+ } 
  
  
  .flip-card-front p,
