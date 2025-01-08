@@ -110,6 +110,9 @@ h1 {
   margin-top: 5%;
  } 
  
+ .flip-card-back h2{
+  margin-bottom: 2%;
+ }
  
  .flip-card-front p,
  .flip-card-back p {
@@ -147,15 +150,15 @@ h1 {
   .flip-card {
     width: 50%;
   }
-  .flip-card-front h1,
-  .flip-card-back h1 {
-    font-size: 1.7rem;
+  .flip-card-front h2,
+  .flip-card-back h2 {
+    font-size: 1.5rem;
   }
  
  
   .flip-card-front p,
   .flip-card-back p {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
   }
  }
  
@@ -164,15 +167,15 @@ h1 {
   .flip-card {
     width: 100%;
   }
-  .flip-card-front h1,
-  .flip-card-back h1 {
-    font-size: 1.5rem;
+  .flip-card-front h2,
+  .flip-card-back h2 {
+    font-size: 1.25rem;
   }
  
  
   .flip-card-front p,
   .flip-card-back p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
  }
  
