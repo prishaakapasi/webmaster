@@ -136,9 +136,6 @@ fieldset {
     box-sizing: border-box;
  }
  select option, #date{
-   appearance: none;
-    -webkit-appearance: none; 
-    -moz-appearance: none;
    color: black !important;
  }
  
@@ -217,17 +214,42 @@ fieldset {
     }
  
  
-    fieldset {
-        margin-right: 35%;
-        width: 90%;
-        
-    }
- 
- 
     #title, #description {
       margin-top: 15%;
         text-align: center;
     }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Horizontally center */
+      align-items: center; /* Vertically center */
+      min-height: 100vh; /* Ensure it takes the full height */
+      margin: 0; /* Remove default margin */
+  }
+
+  /* Adjust form container */
+  form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      max-width: 500px; /* Limit form width */
+  }
+
+  /* Center fieldset */
+  fieldset {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+  }
+
+  /* Adjust label, input, and button width */
+  label, input, select, button {
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+  }
  }
  
  
