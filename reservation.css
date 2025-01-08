@@ -135,7 +135,7 @@ fieldset {
     padding: 0;
     box-sizing: border-box;
  }
- value, #date{
+ option, #date{
    color: black;
  }
  
