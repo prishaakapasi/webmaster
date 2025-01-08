@@ -276,6 +276,10 @@ button span {
    height: 50vh;
    font-size: 3vw;
 }
+.aboutus p{
+   margin-bottom: 5%;
+   margin-top: 1%;
+}
 
 
 .reviews {
