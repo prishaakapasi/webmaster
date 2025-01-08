@@ -43,6 +43,9 @@ h1{
         width: 50%;
         height: fit-content;
     }
+    .button{
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 480px) {
