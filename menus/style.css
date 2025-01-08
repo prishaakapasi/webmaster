@@ -73,9 +73,11 @@ p{
     padding: 8px 16px;
     font-size: 1rem;
     cursor: pointer;
+    color: black;
 }
 .button:hover{
     background-color: #438578;
+    color: black;
 }
 body{
     background-image: url('menu\ background\(9\).png');
