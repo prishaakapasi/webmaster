@@ -41,10 +41,10 @@ h1{
 @media (max-width: 768px) {
     .container {
         width: 50%;
-        height: fit-content;
+        height: auto;
     }
     .button{
-        margin-bottom: 100px;
+        margin-bottom: 5% !important;
     }
 }
 
