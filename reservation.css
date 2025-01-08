@@ -135,7 +135,7 @@ fieldset {
     padding: 0;
     box-sizing: border-box;
  }
- #dropdown, #date{
+ value, #date{
    color: black;
  }
  
@@ -215,7 +215,7 @@ fieldset {
  
  
     fieldset {
-        margin:auto;
+        margin-right: 35%;
         width: 90%;
         
     }
