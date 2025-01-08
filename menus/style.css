@@ -104,6 +104,7 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
  }
  
+ 
  .nav-links {
     display: flex;
     justify-content: space-around;
@@ -112,9 +113,11 @@ nav {
     transition: transform 0.3s ease-in-out;
  }
  
+ 
  .nav-links li {
     margin: 0 15px;
  }
+ 
  
  .nav-links a {
     text-decoration: none;
@@ -123,9 +126,11 @@ nav {
     transition: color 0.3s ease;
  }
  
+ 
  .nav-links a:hover {
     color: teal;
  }
+ 
  
  .menu-toggle {
     display: none;
@@ -134,9 +139,11 @@ nav {
     color: black;
  }
  
+ 
  .nav-links.active {
     transform: translateX(0);
  }
+ 
  
  @media (max-width: 768px) {
     .nav-links {
@@ -151,14 +158,18 @@ nav {
         gap: 6vw;
     }
  
+ 
     .menu-toggle {
         display: block;
     }
  
+ 
     .nav-links.active {
         transform: translateX(0);
     }
- } 
+ }
+ 
+
 
  footer {
     background-color: #333333;
