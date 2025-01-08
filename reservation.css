@@ -1,10 +1,11 @@
 fieldset {
     width: 60%;
     margin: auto;
-    margin-left: 500px;
-    margin-top: 70px;
+    margin-left:35%;
+    margin-top: -2%;
+    margin-bottom: 10%;
     border: none;
-    padding: 40px;
+    padding: 6%;
     border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +13,7 @@ fieldset {
     justify-content: space-between;
  }
  
- 
+
  label {
     flex: 1 1 calc(33.33% - 20px);
     display: flex;
@@ -44,13 +45,13 @@ fieldset {
  
  #title, #description {
     text-align: center;
-    margin-left: 600px;
+    margin-left: 30%;
     color: #333333;
  }
  
  
  #title {
-    margin-top: 150px;
+    margin-top: 10%;
  }
  
  
@@ -130,7 +131,7 @@ fieldset {
  
  
  body, html {
-    margin: 0;
+   margin: 0;
     padding: 0;
     box-sizing: border-box;
  }
@@ -221,7 +222,7 @@ fieldset {
  
  
     #title, #description {
-        margin-left: 0;
+      margin-top: 15%;
         text-align: center;
     }
  }
