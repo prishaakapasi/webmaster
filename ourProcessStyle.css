@@ -9,7 +9,7 @@ h1 {
  
  
  h2 {
-margin-top: 50px;
+ margin-top: 50px;
  margin-left: 15px;
  margin-right: 15px;
  }
@@ -94,9 +94,9 @@ margin-top: 50px;
   padding: 20px 30px;
   box-sizing: border-box;
  }
- .flip-card-front h1,
- .flip-card-back h1 {
-  font-size: 3.5rem;
+ .flip-card-front h2,
+ .flip-card-back h2 {
+  font-size: 1.75rem;
   margin: 0;
   flex-grow: 1;
   display: flex;
@@ -105,14 +105,15 @@ margin-top: 50px;
  }
 
  
- .flip-card-back h2{
+ .flip-card-front h2,
+ .flip-card-back h2 {
   margin-top: 5%;
  } 
  
  
  .flip-card-front p,
  .flip-card-back p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 0;
   flex-grow: 2;
   display: flex;
@@ -180,11 +181,13 @@ margin-top: 50px;
  margin-left: 15px;
  margin-right: 15px;
  }
+
  body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
  }
+
  nav {
   background-color: white;
   padding: 0.3%;
