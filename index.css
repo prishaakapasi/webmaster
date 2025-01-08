@@ -448,6 +448,9 @@ footer {
        margin-top: 8%;
        margin-left: -3%;
    }
+   .reviews{
+    height:fit-content;
+   }
 }
 
 
