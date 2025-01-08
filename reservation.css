@@ -134,7 +134,9 @@ fieldset {
     padding: 0;
     box-sizing: border-box;
  }
- 
+ #dropdown, #date{
+   color: black;
+ }
  
  nav {
     background-color: white;
