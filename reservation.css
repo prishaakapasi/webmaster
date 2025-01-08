@@ -136,6 +136,9 @@ fieldset {
     box-sizing: border-box;
  }
  select option, #date{
+   appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
    color: black;
  }
  
