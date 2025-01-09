@@ -78,7 +78,11 @@ nav {
     circle {
         width: 1vw;  
         height: 1vh; 
-        margin-bottom: -10%; 
+        padding-top: -20%; 
+    }
+    #drinks{
+        width: 1vw;  
+        height: 1vh; 
     }
     
 }
@@ -230,8 +234,8 @@ footer {
     .footer-container {
         text-align: center;
     }
-    .footer{
-        font-size: 3vw;
+    footer{
+        font-size: 2.7vw;
     }
     .footer-map iframe {
         width: 50vw;
