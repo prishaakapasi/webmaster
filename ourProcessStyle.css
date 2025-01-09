@@ -269,19 +269,14 @@ h1 {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       gap: 6vw;
   }
- 
- 
- 
- 
+
   .menu-toggle {
       display: block;
   }
- 
- 
- 
- 
+
   .nav-links.active {
       transform: translateX(0);
+      top: 0px;
   }
  }
  

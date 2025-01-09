@@ -215,6 +215,7 @@ nav {
 
    .nav-links.active {
        transform: translateX(0);
+       top: 0px;
    }
 
 
