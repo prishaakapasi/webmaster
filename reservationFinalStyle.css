@@ -129,13 +129,15 @@ footer {
    
    @media (max-width: 768px) {
       .footer-container {
-          flex-direction: column;
           text-align: center;
       }
       .footer-map iframe {
-          width: 100%;
-          max-width: 300px;
+          width: 50vw;
+          height: 15vh;
       }
+      .footer{
+         font-size: 1.2vw;
+     }
    }
    nav, p, h1, button, select, input {
       font-family: "Julius Sans One", sans-serif;
@@ -168,19 +170,6 @@ footer {
      margin: 0;
      padding: 20px;
      text-align: center;
-   }
- 
-   footer {
-     width: 100%;
-     padding: 20px 0;
-     text-align: center;
-   }
- 
-   .footer-container {
-     width: 100%;
-     padding: 10px;
-     flex-direction: column;
-     gap: 10px;
    }
  }
  

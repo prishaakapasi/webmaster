@@ -278,12 +278,15 @@ footer {
 
 @media (max-width: 768px) {
    .footer-container {
-       flex-direction: column;
        text-align: center;
    }
    .footer-map iframe {
-       width: 90%;
+       width: 50vw;
+       height: 15vh;
    }
+   .footer{
+      font-size: 1.2vw;
+  }
 }
 
 

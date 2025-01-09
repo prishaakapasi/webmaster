@@ -227,12 +227,14 @@ footer {
  
  @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
         text-align: center;
     }
     .footer-map iframe {
-        width: 100%;
-        max-width: 300px;
+        width: 50vw;
+        height: 15vh;
+    }
+    .footer{
+        font-size: 1.2vw;
     }
  }
  nav, p, h1, button, select, input {

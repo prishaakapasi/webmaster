@@ -336,13 +336,15 @@ h1 {
 
  @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
       text-align: center;
   }
   .footer-map iframe {
-      width: 100%;
-      max-width: 300px;
+      width: 50vw;
+      height: 15vh;
   }
+  .footer{
+    font-size: 1.2vw;
+  } 
  }
  #video {
   position: relative; /* This makes the video relative to its normal position in the document */
