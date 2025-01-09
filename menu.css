@@ -230,8 +230,8 @@ footer {
     .footer-container {
         text-align: center;
     }
-    .footer{
-        font-size: 3vw;
+    footer{
+        font-size: 2.7vw;
     }
     .footer-map iframe {
         width: 50vw;
