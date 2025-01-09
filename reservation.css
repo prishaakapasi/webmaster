@@ -219,19 +219,30 @@ nav {
 
 
    fieldset {
-       margin-right: 35%;
+       margin: auto;
        width: 90%;
-       
+       gap: 100%;
+   }
+   fieldset label{
+      padding: 5%;
+   }
+   #title{
+     margin:auto;
+     margin-top: 35%;
+   }
+   #description{
+      margin: auto;
+   }
+   .textandform{
+      padding: 100%;
+   }
+   body {
+      background-image: url('ReservationPhone.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
    }
 
-
-   #title, #description {
-     margin-top: 15%;
-       text-align: center;
-   }
-   body{
-      margin-top: 20%;
-   }
 }
 
 
