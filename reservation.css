@@ -37,6 +37,10 @@ input, select, #date{
    color: black;
 }
 
+#date{
+   width: 100% !important;
+}
+
 
 body {
    font-family: "Julius Sans One", sans-serif;
