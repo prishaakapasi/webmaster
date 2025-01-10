@@ -86,7 +86,7 @@ nav {
         height: 1vh; 
     }
     .drinks-icon, .dessert-icon{
-        margin-bottom: 65%;
+        margin-bottom: 65% !important;
     }
     
 }
