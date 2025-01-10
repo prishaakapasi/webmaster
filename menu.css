@@ -73,7 +73,7 @@ nav {
         transform: translateX(0);
     }
     h3{
-        margin-top: 10%;
+        margin-top: -5%;
         font-size: 1em;
         margin-bottom: 10%;
     }
@@ -84,6 +84,9 @@ nav {
     #drinks{
         width: 1vw;  
         height: 1vh; 
+    }
+    .drinks-icon, .dessert-icon{
+        margin-bottom: 65%;
     }
     
 }
