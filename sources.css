@@ -1,4 +1,4 @@
-body, html {
+body, html{
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -13,44 +13,50 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links {
+ }
+ 
+ 
+ .nav-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     transition: transform 0.3s ease-in-out;
-}
-
-.nav-links li {
+ }
+ 
+ 
+ .nav-links li {
     margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
+ }
+ 
+ 
+ .nav-links a {
+    text-decoration: none !important;
     color: black;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
+ }
+ 
+ 
+ .nav-links a:hover {
     color: teal;
-    text-decoration: none;
-}
-
-.menu-toggle {
+ }
+ 
+ 
+ .menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 4vw;
     color: black;
-}
-
-.nav-links.active {
+ }
+ 
+ 
+ .nav-links.active {
     transform: translateX(0);
-}
-
-@media (max-width: 768px) {
+ }
+ 
+ 
+ @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         background-color: white;
@@ -62,11 +68,13 @@ nav {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         gap: 6vw;
     }
-
+ 
+ 
     .menu-toggle {
         display: block;
     }
-
+ 
+ 
     .nav-links.active {
         transform: translateX(0);
         top: 0px;
@@ -119,7 +127,7 @@ p {
     font-size: 1.4vw; /* Increase font size for paragraph text */
 }
 
-a {
+.source-links a {
     display: block;
     margin: 10px 0; /* More space between links */
     color: #000;
