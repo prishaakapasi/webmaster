@@ -37,8 +37,19 @@ input, select, #date{
    color: black;
 }
 
-#date-label{
-   width: 100% !important;
+input[type="date"] {
+   width: 100%; /* Match the width of other inputs */
+   height: 50px; /* Ensure the height is the same as others */
+   border: none;
+   background-color: white;
+   border-radius: 5px;
+   padding: 5px;
+   box-sizing: border-box;
+   border: 1px solid #333333;
+   color: black;
+   appearance: none; /* Remove native styling that could affect size */
+   -webkit-appearance: none; /* Remove iOS default styles */
+   -moz-appearance: none; /* Remove Firefox default styles */
 }
 
 
