@@ -75,8 +75,9 @@ nav {
     h3{
         margin-top: -5%;
         font-size: 1em;
+        margin-bottom: 10%;
     }
-    circle {
+    .circle {
         width: 1vw;  
         height: 1vh; 
         padding-top: -20%; 
@@ -85,6 +86,9 @@ nav {
     #drinks{
         width: 1vw;  
         height: 1vh; 
+    }
+    .drinks-icon, .dessert-icon{
+        margin-bottom: 65% !important;
     }
     
 }
