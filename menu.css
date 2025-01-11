@@ -80,6 +80,8 @@ nav {
     .circle {
         width: 1vw;  
         height: 1vh; 
+        padding-top: -20%; 
+        top: 4vh !important;
     }
     #drinks{
         width: 1vw;  
