@@ -80,6 +80,7 @@ nav {
         width: 1vw;  
         height: 1vh; 
         padding-top: -20%; 
+        top: 1.2em;
     }
     #drinks{
         width: 1vw;  
