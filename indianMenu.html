@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Webmaster Indian Menu page" />
+  <title>Indian Menu Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+    p,h1, button {
+        font-family: "Julius Sans One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+          </div>
+          <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#aboutus">About Us</a></li>
+          <li><a href="../ourProcess.html">Our Process</a></li>
+          <li><a href="../menu.html">Menu</a></li>
+          <li><a href="../reservation.html">Reserve</a></li>
+          <li><a href="../sources.html">Sources</a></li>
+          <li><a href="../cart.html"><img src="../shoppingcart.png" alt="Cart" style="width: 40px; height: 30px;"/></a></li>
+        </ul>
+      </nav>
+    <h1>Indian Menu</h1>
+    <div class="container-grid">
+        <div id="div1" class="container">
+            <img id="foodImg1" class="foodImg" src="indian1.jpeg" alt="plate">
+            <p id="itemName1" class="itemName">Paneer Masala with Garlic Naan</p>
+            <p id="itemPrice1" class="itemPrice">$13.99</p>
+            <p id="itemDescription1" class="itemDescription">Rich and creamy tomato-based curry with cubes of paneer, served with fluffy garlic naan.</p>
+            <button id="button1" type="button" class="button" onclick="addToCart('Paneer Masala with Garlic Naan', 13.99)">Add to Cart</button>
+        </div>
+        <div id="div2" class="container">
+            <img id="foodImg2" class="foodImg" src="indian2.jpeg" alt="plate">
+            <p id="itemName2" class="itemName">Gobi Manchurian with Rice</p>
+            <p id="itemPrice2" class="itemPrice">$10.99</p>
+            <p id="itemDescription2" class="itemDescription">Crispy cauliflower florets tossed in a tangy Indo-Chinese sauce, paired with steamed rice.</p>
+            <button id="button2" type="button" class="button" onclick="addToCart('Gobi Manchurian with Rice', 10.99)">Add to Cart</button>
+        </div>
+        <div id="div3" class="container">
+            <img id="foodImg3" class="foodImg" src="indian3.jpeg" alt="plate">
+            <p id="itemName3" class="itemName">Vegetable Korma with Roti</p>
+            <p id="itemPrice3" class="itemPrice">$13.99</p>
+            <p id="itemDescription3" class="itemDescription">A mildly spiced coconut-based curry loaded with vegetables, served with soft roti.</p>
+            <button id="button3" type="button" class="button" onclick="addToCart('Vegetable Korma with Roti', 13.99)">Add to Cart</button>
+        </div>
+        <div id="div4" class="container">
+            <img id="foodImg4" class="foodImg" src="indian4.jpeg" alt="plate">
+            <p id="itemName4" class="itemName">Masala Dosa with Sambar</p>
+            <p id="itemPrice4" class="itemPrice">$11.99</p>
+            <p id="itemDescription4" class="itemDescription">Crispy rice crepe filled with spiced potato masala, served with lentil soup and chutney.</p>
+            <button id="button4" type="button" class="button" onclick="addToCart('Masala Dosa with Sambar', 11.99)">Add to Cart</button>
+        </div>
+        <div id="div5" class="container">
+            <img id="foodImg5" class="foodImg" src="indian5.jpeg" alt="plate">
+            <p id="itemName5" class="itemName">Aloo Paratha with Raita</p>
+            <p id="itemPrice5" class="itemPrice">$10.99</p>
+            <p id="itemDescription5" class="itemDescription">Flaky flatbread stuffed with seasoned mashed potatoes, served with cool yogurt raita.</p>
+            <button id="button5" type="button" class="button" onclick="addToCart('Aloo Paratha with Raita', 10.99)">Add to Cart</button>
+        </div>
+        <div id="div6" class="container">
+            <img id="foodImg6" class="foodImg" src="indian6.jpeg" alt="plate">
+            <p id="itemName6" class="itemName">Samosa Chaat</p>
+            <p id="itemPrice6" class="itemPrice">$9.99</p>
+            <p id="itemDescription6" class="itemDescription">Crispy samosas crushed and topped with tangy chutneys, yogurt, and crunchy sev.</p>
+            <button id="button6" type="button" class="button" onclick="addToCart('Samosa Chaat', 9.99)">Add to Cart</button>
+        </div>
+    </div>    
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+        }
+      </script>
+    <script>
+        function addToCart(itemName, itemPrice) {
+  // Get existing cart from localStorage, or initialize an empty array if none exists
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+  // Add the new item to the cart array
+  cart.push({ name: itemName, price: itemPrice });
+  
+  // Save the updated cart back to localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+  
+  // Change the button text to "Added to Cart"
+  let button = event.target; // The button that was clicked
+  let originalText = button.innerText; // Store the original text of the button
+  button.innerText = "Added to Cart";
+
+  // Set a timeout to revert the text back after 2 seconds (2000ms)
+  setTimeout(function() {
+    button.innerText = originalText;
+  }, 2000); // Reset the button text after 2 seconds
+}
+
+      </script>
+</body>
+<footer>
+  <div class="footer-container">
+    <div class="footer-text">
+      <h4>10976 Vegan Way</h4>
+      <h4>San Diego, CA 22434</h4>
+      <h4>619-731-3231</h4>
+    </div>
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9484165785316!2d-117.16108758468712!3d32.71573698109206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9533e03c0f0f7%3A0x9d1139c704345c3!2s10976%20Vegan%20Way%2C%20San%20Diego%2C%20CA%2022434%2C%20USA!5e0!3m2!1sen!2sus!4v1682471149000!5m2!1sen!2sus"
+        width="300"
+        height="200"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+ </footer>
+</html>
