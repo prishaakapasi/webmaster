@@ -557,6 +557,7 @@ footer {
    text-align: left !important;  /* Force left alignment */
    margin-right: auto;
    padding: 2%;
+   margin-left: 4%;
  }
  
  .title h3,
