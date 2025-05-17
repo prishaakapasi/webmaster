@@ -1,9 +1,18 @@
-body, html{
-    margin:0;
-    padding: 0;
+*, *::before, *::after {
     box-sizing: border-box;
-    background-image: none;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("backgroundsources.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;        /* Stretches full width, keeps height auto */
+    background-attachment: fixed;
+    background-color: #f9f9f9;
+}
+
 
 nav {
     background-color: white;
@@ -88,18 +97,18 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 7%;
 }
 
-div.sources-container {
-    width: 80%; /* Keeps it wide on larger screens */
-    max-width: none; /* Ensures it doesn't restrict width on larger screens */
+.sources-container {
+    width: 80%;
+    max-width: none;
     min-width: 300px;
     height: auto;
     padding: 20px;
-    background-color: #83C5BE;
+    background-color: white;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 100px; /* Increased from 20px to 100px */
     border-radius: 20px;
     font-size: clamp(14px, 2vw, 18px);
     text-align: center;
@@ -110,7 +119,12 @@ div.sources-container {
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+
+    /* Solid double-colored border */
+    border: 5px solid;
+    border-image: linear-gradient(45deg, pink, orange) 1;
 }
+
 
 @media (max-width: 768px) {
     div.sources-container {
