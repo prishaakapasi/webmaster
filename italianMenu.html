@@ -34,10 +34,29 @@
     <h1>Italian Menu</h1>
     <div id="filter">
       <select id="filterDropdown">
-        <option value="option1">All</option>
-        <option value="option2">Gluten Free</option>
-        <option value="option2">Peanut Free</option>
+        <option value="../italianMenu.html">All</option>
+        <option value="../italianMenuGluten.html">Gluten Free</option>
+        <option value="../italianMenuPeanut.html">Peanut Free</option>
       </select>
+      
+      <!-- JavaScript to handle navigation and remembering selection -->
+      <script>
+        const filterDropdown = document.getElementById('filterDropdown');
+      
+        // Set dropdown value from localStorage on page load
+        window.onload = function() {
+          const savedFilter = localStorage.getItem('selectedFilter');
+          if (savedFilter) {
+            filterDropdown.value = savedFilter;
+          }
+        };
+      
+        // Save selected value and navigate
+        filterDropdown.addEventListener('change', function() {
+          localStorage.setItem('selectedFilter', this.value);
+          window.location.href = this.value;
+        });
+      </script>
     </div>
     <div class="container-grid">
         <div id="div1" class="container">
