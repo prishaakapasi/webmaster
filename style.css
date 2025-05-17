@@ -170,6 +170,20 @@ nav {
     }
  }
  
+ #filter{
+    display:block;
+    background-color:#83C5BE;
+    padding: 1%;
+    border-radius: 30px;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+ }
+
+ #filterDropdown{
+    background-color: #83C5BE;
+    border: none;
+ }
 
 
  footer {
