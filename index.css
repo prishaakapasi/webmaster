@@ -89,9 +89,6 @@ nav {
    list-style: none;
    transition: transform 0.3s ease-in-out;
 }
-#logo{
-   margin: auto;
-}
 
 .nav-links li {
    margin: 0 15px;
@@ -304,13 +301,13 @@ button span {
 }
 @media (max-width: 768px){
     .reviews{
-        margin-top: 20%;
+        margin-top: 3%;
         height: fit-content;
         margin-bottom: 30%;
     }
     #aboutus{
         padding-bottom: 30%;
-        padding-top: 20%;
+        padding-top: 10%;
        }
     .aboutus{
         font-size: 4vw;
@@ -369,7 +366,7 @@ footer {
    background-color: #333333;
    color: #ffffff;
    text-align: center;
-   padding: 20px 0;
+   padding: 10px 0;
    position: relative;
    bottom: 0;
    margin-top: 10%;
@@ -415,6 +412,7 @@ footer {
 @media (max-width: 768px) {
    .footer-container {
        text-align: center;
+       margin-top: 0 !important;
    }
    .footer-map iframe {
        width: 50vw;
@@ -422,6 +420,14 @@ footer {
    }
    footer{
     font-size: 2.7vw;
+}
+.contact-info{
+   text-align: center;
+   margin: auto;
+}
+.Phone-Number{
+   display: inline;
+   text-align: center;
 }
 }
 
@@ -481,18 +487,20 @@ footer {
    .dailyImg {
        height: 40vw;
        width: 40vw;
-       margin-top: 10%;
-       margin-left: -5%;
+       margin-top: 5%;
+       margin-left: -10%;
    }
    .dailyspecial{
-    margin-top: 30%;
+    margin-top: 10%;
    }
 
    .dailyspecial h1{
     font-size: 4vw !important;
+    margin-left: -6% !important;
    }
    .dailyspecial p{
-    font-size: 2vw !important;
+    font-size: 1.5vw !important;
+    margin-left: -5% !important;
    }
 }
 
