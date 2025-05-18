@@ -545,7 +545,7 @@ h1 {
    border-radius: 8px;
    width: 300px;
    height: 200px;
-   margin-right: 0%;
+   margin-right: 2%;
    margin-left: 2%;
 }
 
@@ -599,9 +599,6 @@ h1 {
  .title p {
    text-align: left !important;  /* Ensure heading and paragraph align left */
  }
-<<<<<<< HEAD
  .socials{
    margin-left: -2%;
  }
-=======
->>>>>>> 31e6a8cc0fe420c5d9e66af5512e5c429c9ec643
