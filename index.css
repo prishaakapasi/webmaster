@@ -417,18 +417,44 @@ footer {
    .footer-map iframe {
        width: 50vw;
        height: 15vh;
+       margin-right: 1%;
    }
    footer{
     font-size: 2.7vw;
 }
-.contact-info{
-   display: inline;
+.footer-bottom {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 5% 2%;
+ }
+ 
+ .contact-info {
+   flex-direction: row;
+   align-items: center;
    text-align: center;
-   margin: auto;
+   max-width: 0%;
+   margin: 10px;
+ }
+ 
+ .socials,
+ .Phone-Number {
+   margin: 0%;
+   padding: 12px;
+ }
+ 
+ .logo {
+   max-width: 60px;
+   padding: 0;
+   margin: 0;
+ }
+.title h3, p{
+   font-size: 3vw;
 }
-.Phone-Number{
-   display: inline;
-   text-align: center;
+.title{
+   padding-left: 100px;
 }
 }
 
@@ -574,7 +600,4 @@ footer {
  .title h3,
  .title p {
    text-align: left !important;  /* Ensure heading and paragraph align left */
- }
- .socials{
-   margin-left: -2%;
  }
