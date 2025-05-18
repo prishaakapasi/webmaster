@@ -249,7 +249,7 @@ footer {
     border-radius: 8px;
     width: 300px;
     height: 200px;
-    margin-right: auto;
+    margin-right: 10%;
     margin-left: -70%;
  }
 
@@ -276,7 +276,7 @@ footer {
     margin-right: 4%;      /* Push the element to the right */
  }
   .logoimg{
-    width: 100%;
+    width: 70%;
   }
   .contact-info {
     display: flex;
@@ -284,6 +284,7 @@ footer {
     align-items: flex-start; /* left-align content */
     gap: 20px; /* space between sections */
     max-width: 300px;
+    margin-left: 2.5%;
   }
   
   .socials img {
