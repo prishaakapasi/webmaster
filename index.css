@@ -422,6 +422,7 @@ footer {
     font-size: 2.7vw;
 }
 .contact-info{
+   display: inline;
    text-align: center;
    margin: auto;
 }

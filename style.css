@@ -84,7 +84,7 @@ p{
     color: black;
 }
 body{
-    background-image: url(homepage\ redo.png);
+    background-image: url(/backgroundsources.png);
     height: 1350px;
     font-family: "Julius Sans One", sans-serif;
     background-size: cover;
