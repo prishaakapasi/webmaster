@@ -6,7 +6,7 @@ h1{
     margin-top: 6%;
     margin-bottom: 1%;
     font-weight: 20;
-    font-size: 8.2vw;
+    font-size: 6.5vw;
 }
 .container {
     width: 28%;
@@ -84,7 +84,7 @@ p{
     color: black;
 }
 body{
-    background-image: url(/backgroundsources.png);
+    background-image: url(/menutrial2.png);
     height: 1350px;
     font-family: "Julius Sans One", sans-serif;
     background-size: cover;
