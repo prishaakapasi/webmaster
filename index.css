@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Noto+Color+Emoji&display=swap');
-
 
 p,h1,li,h3,button,div, iframe{
    font-family: "Julius Sans One", sans-serif;
@@ -303,7 +301,7 @@ button span {
     .reviews{
         margin-top: 3%;
         height: fit-content;
-        margin-bottom: 30%;
+
     }
     #aboutus{
         padding-bottom: 30%;
@@ -362,53 +360,64 @@ h1 {
 }
 
 @media (max-width: 768px) {
-   .footer-container {
-       text-align: center;
-       margin-top: 0 !important;
-   }
-   .footer-map iframe {
-       width: 50vw;
-       height: 15vh;
-       margin-right: 1%;
-   }
    footer{
-    font-size: 2.7vw;
-}
-.footer-bottom {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   flex-wrap: wrap;
-   padding: 5% 2%;
- }
- 
- .contact-info {
-   flex-direction: row;
-   align-items: center;
-   text-align: center;
-   max-width: 0%;
-   margin: 10px;
- }
- 
- .socials,
- .Phone-Number {
-   margin: 0%;
-   padding: 12px;
- }
- 
- .logo {
-   max-width: 60px;
-   padding: 0;
-   margin: 0;
- }
-.title h3, p{
-   font-size: 3vw;
-}
-.title{
-   padding-left: 100px;
-}
-}
+      margin-top: 0 !important;
+   }
+   .footer-container{
+      max-height: fit-content;
+      padding-bottom: 10%;
+   }
+   .footer-map iframe{
+      width: 50vw !important;
+      height: 15vh !important;
+   }
+   .title{
+      margin-right: 0 !important;
+   }
+   .title p, .title h3{
+      font-size: 3vw;
+   }
+   .contact-info h1, .contact-info p{
+      font-size: 4vw !important;
+   }
+   .contact-info{
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between;
+      margin-left: 5% !important;
+      gap: 50px;
+   }
+   .socials {
+      display: flex !important;
+      flex-direction: column !important; /* stack title and images vertically */
+      align-items: center; /* or center, if you want */
+    }
+    
+    .social-imgs {
+      display: flex !important;
+      flex-direction: row !important; /* line up images horizontally */
+      gap: 3px;
+      align-items: center;
+    }
+    .logo {
+      margin-left: auto !important;  /* Push logo to the right */
+      margin-right: 4% !important;
+      max-width: 30%; /* Optional: adjust width on small screens */
+      padding-top: 5%; /* Keep your padding */
+      flex-direction: column;
+      align-items: flex-end;  /* Right align text inside logo */
+      text-align: center;
+    }
+    .logo img{
+      width: 25vw;
+    }
+    .Phone-Number{
+      max-width: 100%;
+      white-space: nowrap;
+    }
+    
+    
+}  
 
 
 .stars {
