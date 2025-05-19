@@ -342,6 +342,7 @@ h1 {
   gap: 20px; /* space between sections */
   max-width: 200px;
   margin-left: 10%;
+  margin-top: -7%;
 }
 
 .socials img {
@@ -360,6 +361,9 @@ h1 {
 .Phone-Number p {
   margin: 0;
   font-size: 16px;
+}
+.Phone-Number{
+  margin-top: -80%;
 }
 .title {
   max-width: 20%;
