@@ -373,6 +373,7 @@ h1 {
    }
    .title{
       margin-right: 0 !important;
+      margin-left: 0 !important;
    }
    .title p, .title h3{
       font-size: 3vw;
