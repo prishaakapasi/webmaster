@@ -150,14 +150,13 @@ nav {
    color: #ffffff;
    text-align: center;
    padding: 20px 0;
-   position: fixed;
+   position: relative;
    width: 100%;
    font-family: "Julius Sans One", sans-serif;
    font-size: 1.2vw;
    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
    padding-bottom: 10px;
-   padding-top: 10px;
-   margin-top: 14%;
+   margin-top: 15%;
 }
 
 

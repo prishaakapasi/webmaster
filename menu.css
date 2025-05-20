@@ -200,6 +200,9 @@ nav {
 
 
 @media (max-width: 768px) {
+    footer {
+        display: none;
+      }
     footer{
        margin-top: 0 !important;
     }
@@ -255,8 +258,10 @@ nav {
      .Phone-Number{
        max-width: 100%;
        white-space: nowrap;
-     } 
-  } 
+     }  
+     
+    }
+
 footer {
     background-color: #333333;
     color: #ffffff;
