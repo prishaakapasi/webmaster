@@ -378,6 +378,7 @@ footer {
    .title{
       margin-right: 0 !important;
       margin-left: 0 !important;
+      max-width: 70vw;
    }
    .title p, .title h3{
       font-size: 3vw;
@@ -390,7 +391,7 @@ footer {
       flex-direction: row !important;
       justify-content: space-between;
       margin-left: 5% !important;
-      gap: 50px;
+      gap: 5vw;
    }
    .socials {
       display: flex !important;
