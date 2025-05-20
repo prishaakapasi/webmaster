@@ -112,39 +112,64 @@ nav {
 }
 
 @media (max-width: 768px) {
-   .footer-container {
-       text-align: center;
+   footer{
+      margin-top: 0 !important;
    }
-   .footer-map iframe {
-       width: 50vw;
-       height: 15vh;
+   .footer-container{
+      max-height: fit-content;
+      padding-bottom: 10%;
    }
-   footer{ 
-      font-size: 2.7vw;
-      margin-top: 30%;
-  }
-  #title{
-   margin-top: 50% !important;
-  }
-}
-   nav, p, h1, button, select, input {
-      font-family: "Julius Sans One", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-  }
-
-  @media (max-width: 480px) {
-   body {
-     margin: 0;
-     padding: 0;
+   .footer-map iframe{
+      width: 50vw !important;
+      height: 15vh !important;
    }
- 
-   #title {
-     margin: 0;
-     padding: 20px;
-     text-align: center;
+   .title{
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      max-width: 70vw !important;
    }
- }
+   .title p, .title h3{
+      font-size: 3vw;
+   }
+   .contact-info h1, .contact-info p{
+      font-size: 4vw !important;
+   }
+   .contact-info{
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between;
+      margin-left: 5% !important;
+      gap: 5vw;
+   }
+   .socials {
+      display: flex !important;
+      flex-direction: column !important; /* stack title and images vertically */
+      align-items: center; /* or center, if you want */
+    }
+   
+    .social-imgs {
+      display: flex !important;
+      flex-direction: row !important; /* line up images horizontally */
+      gap: 3px;
+      align-items: center;
+    }
+    .logo {
+      margin-left: auto !important;  /* Push logo to the right */
+      margin-right: 4% !important;
+      max-width: 30%; /* Optional: adjust width on small screens */
+      padding-top: 5%; /* Keep your padding */
+      flex-direction: column;
+      align-items: flex-end;  /* Right align text inside logo */
+      text-align: center;
+    }
+    .logo img{
+      width: 25vw;
+    }
+    .Phone-Number{
+      max-width: 100%;
+      white-space: nowrap;
+    } 
+ } 
  footer {
    background-color: #333333;
    color: #ffffff;

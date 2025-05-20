@@ -354,18 +354,66 @@ footer {
   }
  
  
- @media (max-width: 768px) {
-    .footer-container {
-        text-align: center;
-    }
-    .footer-map iframe {
-        width: 50vw;
-        height: 15vh;
-    }
+  @media (max-width: 768px) {
     footer{
-        font-size: 2.7vw;
+       margin-top: 0 !important;
     }
- }
+    .footer-container{
+       max-height: fit-content;
+       padding-bottom: 10%;
+    }
+    .footer-map iframe{
+       width: 50vw !important;
+       height: 15vh !important;
+       margin-right: 2vw !important;
+    }
+    .title{
+       margin-right: 0 !important;
+       margin-left: 0 !important;
+       max-width: 70vw;
+    }
+    .title p, .title h3{
+       font-size: 3vw;
+    }
+    .contact-info h1, .contact-info p{
+       font-size: 4vw !important;
+    }
+    .contact-info{
+       display: flex !important;
+       flex-direction: row !important;
+       justify-content: space-between;
+       margin-left: 5% !important;
+       gap: 5vw;
+    }
+    .socials {
+       display: flex !important;
+       flex-direction: column !important; /* stack title and images vertically */
+       align-items: center; /* or center, if you want */
+     }
+    
+     .social-imgs {
+       display: flex !important;
+       flex-direction: row !important; /* line up images horizontally */
+       gap: 3px;
+       align-items: center;
+     }
+     .logo {
+       margin-left: auto !important;  /* Push logo to the right */
+       margin-right: 4% !important;
+       max-width: 30%; /* Optional: adjust width on small screens */
+       padding-top: 5%; /* Keep your padding */
+       flex-direction: column;
+       align-items: flex-end;  /* Right align text inside logo */
+       text-align: center;
+     }
+     .logo img{
+       width: 25vw;
+     }
+     .Phone-Number{
+       max-width: 100%;
+       white-space: nowrap;
+     } 
+  } 
     .cart-item {
         display: flex;
         justify-content: space-between;
