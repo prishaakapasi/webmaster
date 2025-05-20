@@ -403,6 +403,10 @@ h1 {
 .title p, .title h3{
   font-size: 3vw;
 }
+.title p{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 .contact-info h1, .contact-info p{
   font-size: 4vw !important;
 }
