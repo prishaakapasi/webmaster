@@ -52,11 +52,12 @@
 
 <div class="dailyspecial-main">
   <div class="dailyspecial-text">
-    <h1 id="dailySpecialTitle"> Daily Special</h1>
-    <p id="dailySpecialName">Rainbow Harvest Buddha Bowl</p>
+    <h1 id="dailySpecialTitle"> Daily Special:</h1>
+    <h2 id="dailySpecialName">Vegan Pinapple Upside Down Pancakes</h2>
+    <p id="dailySpecialDescription">Fluffy vegan pancakes topped with caramelized pineapple and a brown sugar glaze, bringing tropical flavor to your morning bite</p>
  </div>
    <div class="dailyImg-container">
-     <img id="dailyImg" class="dailyImg" src="dailyspecial.jpeg" alt="plate">
+     <img id="dailyImg" class="dailyImg" src="dailySpecial2.jpeg" alt="plate">
    </div>
 </div>
 <div class="order-special">
@@ -123,6 +124,14 @@
     </form>
   </div>
 </div>
+<script>
+  document.getElementById("review-btn").addEventListener("click", function () {
+    const reviewInput = document.getElementById("name");
+    if (reviewInput.value.trim() !== "") {
+      reviewInput.value = "";
+    }
+  });
+</script>
 <script>
  function addToCart(itemName, itemPrice) {
    let cart = JSON.parse(localStorage.getItem('cart')) || [];
