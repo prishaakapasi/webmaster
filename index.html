@@ -43,22 +43,24 @@
 </div>
  
 <div class="button-container">
- <button type="button" onclick="window.location.href='menu.html'"> <span>Order Now</span> </button>
- <button type="button" onclick="window.location.href='ourProcess.html'"> <span>Our Process</span> </button>
+ <button type="button" class="button" onclick="window.location.href='menu.html'"> <span>Order Now</span> </button>
+ <button type="button"class="button" onclick="window.location.href='ourProcess.html'"> <span>Our Process</span> </button>
 
 
 </div>
 
 
-<div class="dailyspecial">
- <h1 id="dailySpecialTitle"> Daily Special</h1>
- <p id="dailySpecialName">Rainbow Harvest Buddha Bowl</p>
-  <a id="img-btn" href="index.html#dailyspecial" onclick="addToCart('Rainbow Harvest Buddha Bowl', 12.99)">
+<div class="dailyspecial-main">
+  <div class="dailyspecial-text">
+    <h1 id="dailySpecialTitle"> Daily Special</h1>
+    <p id="dailySpecialName">Rainbow Harvest Buddha Bowl</p>
+ </div>
    <div class="dailyImg-container">
      <img id="dailyImg" class="dailyImg" src="dailyspecial.jpeg" alt="plate">
-     <div class="caption">Order Now!</div>
    </div>
- </a>
+</div>
+<div class="order-special">
+  <button type="button" id="orderspecial-button" class="button" onclick="addToCart('Rainbow Harvest Buddha Bowl', 12.99)"> <span>Add to cart</span> </button>
 </div>
 
 
@@ -68,6 +70,15 @@
    <p>Welcome to Global Goodness, located in San Diego, CA. We are passionate about creating tasteful, plant-based dishes that please our customers and the environment. 5 years ago we started with 4 people, with a goal to create nourishing food for vegan/vegetarian lovers, and now we have grown to be able to serve hundreds of people. Our menu includes fresh ingredients, and dishes from all around the world with the help of our team. Whether you're a vegan or want to try out different cuisines, we invite you to enjoy a delicious meal with us. With every dish you order, you can help us create a positive impact on the Earth: green style.</p>
  </div>
 </section> 
+<div class="under-about">
+  <div class="moto">
+    <h1 class="motoTitle">Our Moto</h1>
+    <p>bdfrdsrfj sdjeubfiuosgfksruifjls vfjlsgul</p>
+  </div>
+  <div class="about-logo">
+    <img src="logo.png" alt="Logo" class="aboutlogo-img">
+  </div>
+</div>
 <div class="reviews">
  <h1 class="reviewstitle">Reviews</h1>
  <div class="slideshow-container">
@@ -100,6 +111,17 @@
      </div>
    </div>
  </div>
+</div>
+<div class="addreview">
+  <div class="addreview-titlediv">
+    <h1 class="addreview-title">Add a review!</h1>
+  </div>
+  <div class="addreview-box">
+    <form action="#" method="POST" class="review-form">
+      <input type="text" id="name" name="name" placeholder="Enter your review" class="question" required>
+      <button type="button" id="review-btn">Submit Review</button>
+    </form>
+  </div>
 </div>
 <script>
  function addToCart(itemName, itemPrice) {
