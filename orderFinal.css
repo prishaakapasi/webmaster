@@ -11,6 +11,9 @@ body {
     font-style: normal;
     background-color: #83C5BE;
     height: 100vh;
+    background-image: url('orderFinal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
