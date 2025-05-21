@@ -478,7 +478,7 @@ h1 {
   }
   .footer-container{
      max-height: fit-content;
-     padding-bottom: 10%;
+     padding-bottom: 2% !important;
   }
   .footer-map iframe{
      width: 50vw !important;
