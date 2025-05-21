@@ -19,6 +19,8 @@ h1{
     margin-bottom: 60px;
     border-radius: 40px;
     z-index: 0;
+    box-shadow: 17px 17px rgba(33, 95, 99, 0.55);
+    ;
 }
 
 .container-grid {
@@ -84,7 +86,7 @@ p{
     color: black;
 }
 body{
-    background-image: url(/menutrial4.png);
+    background-image: url(/menutrial7.png);
     font-family: "Julius Sans One", sans-serif;
     background-size: cover;
 }
