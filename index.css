@@ -353,7 +353,40 @@ input{
   transform: scale(1.05);
 }
 @media (max-width: 768px){
-
+  body{
+    overflow-x: hidden;
+  }
+  #dailySpecialName{
+    font-size: 2vw;
+  }
+  .dailyspecial-main{
+    margin-top: 10%;
+  }
+  .dailyImg {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .aboutus{
+    padding: 2%;
+    width: 80%;
+    margin-top: 17%;
+  }
+  .motoTitle{
+    font-size: 4vw;
+  }
+  .mototext{
+    font-size: 2vw;
+  }
+  .reviews{
+    width:50%;
+    margin-left: 40%;
+    max-width: 100%;
+  }
+  .review-form{
+    margin: auto;
+    width: 60%;
+    max-width: 100%;
+  }
 }
 
 
