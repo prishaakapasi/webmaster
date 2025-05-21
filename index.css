@@ -399,6 +399,9 @@ input{
   }
   .addreview-titlediv{
     margin-top: 5%;
+    width: 60%;
+    border-radius: 30px;
+    margin-left: 5%;
   }
   .addreview-title{
     font-size: 3vw;
@@ -406,6 +409,7 @@ input{
   .review-form{
     width: 60%;
     max-width: 100%;
+    margin-left: 5%;
   }
   input{
     height: 20vh;
