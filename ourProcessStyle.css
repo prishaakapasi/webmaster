@@ -13,12 +13,28 @@ h1 {
  margin-right: 15px;
  }
  
+ .titleAnim{
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 400;
+ }
  
+ .cap{
+  background-color: #83C5BE;
+  width: fit-content;
+  margin-left: 20%;
+  border-radius: 15px;
+  padding: 0.25%;
+  margin-top: 0.75%;
+
+ }
  body {
  background-attachment: scroll;
  background-size: cover;
  background-repeat: no-repeat;
  font-family: "Julius Sans One", sans-serif;
+ background-image: url('ourProcessback.png');
+ 
  }
  
  
@@ -41,6 +57,7 @@ h1 {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px 10px;
+  display: none;
  }
  
  
@@ -158,6 +175,23 @@ h1 {
   .flip-card-front p,
   .flip-card-back p {
     font-size: 1.05rem;
+  }
+  .titleAnim{
+    font-size: 5vw;
+  }
+  h1{
+    font-size: 15vw;
+  }
+  .cap{
+    max-width: 80vw;
+    font-size: 2.5vw;
+    margin: auto;
+  }
+  body{
+    background-image: url('ourProcessPhoneBack.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
   }
  }
  
@@ -294,6 +328,7 @@ h1 {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
   padding-top: 10px;
+  margin-top: 2%;
 }
 
 
@@ -386,7 +421,7 @@ h1 {
 
 @media (max-width: 768px) {
   footer{
-    margin-top: 0 !important;
+    margin-top: 2% !important;
  }
  .footer-container{
     max-height: fit-content;
@@ -455,7 +490,7 @@ h1 {
 
  #video {
   position: relative; /* This makes the video relative to its normal position in the document */
-  margin-top: -5%; /* Adjust to place the video 3% below the "Our Process" section */
+  margin-top: 5%; /* Adjust to place the video 3% below the "Our Process" section */
   margin-left: auto;
   margin-right: auto;
   display: block; /* To center the video */
@@ -465,7 +500,8 @@ h1 {
   display: flex;
   justify-content: center;  /* Centers content horizontally */
   align-items: center;      /* Centers content vertically */
-  text-align: center;       /* Centers the text inside */
+  text-align: center;
+  width: 60vw;    /* Centers the text inside */
 }
 
 
