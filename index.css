@@ -7,7 +7,7 @@ p,h1,li,h3,button,div,input, iframe, :placeholder-shown{
   font-style: normal;
 }
 body {
-  background-image: url('Home Screen(2).png');
+  background-image: url('Home Screen(4).png');
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -355,24 +355,7 @@ input{
   transform: scale(1.05);
 }
 @media (max-width: 768px){
-   .reviews{
-       margin-top: 3%;
-       height: fit-content;
 
-
-   }
-   #aboutus{
-       padding-bottom: 30%;
-       padding-top: 10%;
-      }
-   .aboutus{
-       font-size: 4vw;
-       padding: 3%;
-       margin: auto;
-   }
-   .aboutus p{
-       font-size: 2vw !important;
-   }
 }
 
 
