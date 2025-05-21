@@ -1,14 +1,15 @@
 body{
     font-family: "Julius Sans One", sans-serif;
     background-image: url('Reservation1.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 h1{
     text-align: center;
 }
-#title{
-    margin-top: 400px;
+.text{
+    margin-top: 27vw;
+    margin-bottom: 27vw;
 }
 body, html {
    margin: 0;
@@ -95,25 +96,24 @@ nav {
         transform: translateX(0);
         top: 0px;
     }
+    body {
+      background-image: url('ReservationPhone.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+   }
+   .text{
+      margin-top: 80vw;
+      margin-bottom: 100vw !important;
+   }
  } 
  
 
-@media (max-width: 768px) {
-   .footer-container {
-       text-align: center;
-   }
-   footer{
-       font-size: 2.7vw;
-   }
-   .footer-map iframe {
-       width: 50vw;
-       height: 15vh;
-   }
-}
 
 @media (max-width: 768px) {
    footer{
       margin-top: 0 !important;
+      position: fixed;
    }
    .footer-container{
       max-height: fit-content;
