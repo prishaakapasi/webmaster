@@ -251,6 +251,9 @@ nav {
        max-width: 100%;
        white-space: nowrap;
      } 
+     .page-title{
+        margin-top: 15% !important;
+     }
   } 
 footer {
     background-color: #333333;

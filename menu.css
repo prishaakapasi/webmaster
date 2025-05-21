@@ -204,15 +204,13 @@ nav {
 
 
 @media (max-width: 768px) {
-    footer {
-        display: none;
-      }
     footer{
        margin-top: 0 !important;
+       position: fixed;
     }
     .footer-container{
        max-height: fit-content;
-       padding-bottom: 10%;
+       padding-bottom: 0;
     }
     .footer-map iframe{
        width: 50vw !important;
@@ -221,6 +219,7 @@ nav {
     .title{
        margin-right: 0 !important;
        margin-left: 0 !important;
+       max-width: 600vw !important;  
     }
     .title p, .title h3{
        font-size: 3vw;
@@ -263,7 +262,18 @@ nav {
        max-width: 100%;
        white-space: nowrap;
      }  
-     
+     .page-title{
+        margin-top: 15%;
+     }
+     html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+     main{
+        flex: 1;
+     }
     }
 
 footer {
