@@ -146,6 +146,47 @@ h2 span {
 
 
 @media (max-width: 768px) {
+    footer{
+       margin-top: 0 !important;
+    }
+    .footer-container{
+       max-height: fit-content;
+       padding-bottom: 2% !important;
+    }
+    .footer-map iframe{
+       width: 50vw !important;
+       height: 15vh !important;
+       margin-left: -10vw !important;
+    }
+    .title{
+       margin-right: 8vw !important;
+       margin-left: -2vw !important;
+       max-width: 70vw !important;
+    }
+    .title p, .title h3{
+       font-size: 3vw;
+       text-align: left !important;
+    }
+    .title p{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .contact-info h1, .contact-info p{
+       font-size: 4vw !important;
+       margin-bottom: 3vw;
+    }
+    .contact-info{
+       display: flex !important;
+       flex-direction: row !important;
+       justify-content: space-between;
+       margin-left: 5% !important;
+       gap: 5vw;
+    }
+    .socials {
+       display: flex !important;
+       flex-direction: column !important; /* stack title and images vertically */
+       align-items: center; /* or center, if you want */
+     }
     
     .footer-container {
         text-align: center;
